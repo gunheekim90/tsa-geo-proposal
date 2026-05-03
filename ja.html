@@ -564,6 +564,17 @@ body {
   margin-top: 1px;
 }
 .ai-platform-logo svg { width: 14px; height: 14px; display: block; }
+.ai-platform-divider {
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--text-mute);
+  padding: 8px 4px 4px;
+  margin-top: 4px;
+  border-top: 1px dashed var(--border);
+  text-transform: uppercase;
+}
 .ai-platform-body { min-width: 0; }
 .ai-platform-name {
   font-size: 10.5px;
@@ -2129,18 +2140,18 @@ body {
     <div>
       <div class="hero-eyebrow">
         <span class="hero-eyebrow-dot"></span>
-        AI MARKETING PREDICTION ENGINE
+        PREDICTIVE MARKETING AI · MULTI-SIGNAL
       </div>
       <h1>
-        <span class="h1-line">AIはすべてのコンテンツを</span>
-        <span class="h1-line">引用しません。</span>
-        <span class="h1-line">どれが引用されるか —</span>
-        <span class="h1-line gradient-text">Citoraが公開前に教えます。</span>
+        <span class="h1-line">AIが決めるすべての露出 —</span>
+        <span class="h1-line">AI検索 · SNS · 推薦アルゴリズム。</span>
+        <span class="h1-line gradient-text">Citoraが公開前に予測します。</span>
       </h1>
       <p class="hero-sub">
-        <strong>Citora</strong>はGeoRank24が独自開発した引用予測AIモデルです。
-        毎日12カ国7つのAIプラットフォームから<strong>3,000万件+の「公開↔引用」データ</strong>を学習し、
-        あなたのコンテンツがAIに引用される確率を<strong>公開前に</strong>スコアで出力します。
+        <strong>Citora</strong>はGeoRank24が開発したマルチシグナル・マーケティングAIモデルです。
+        12カ国 <strong>7 AI検索 + YouTube · Instagram · X · TikTok · Threads</strong>から
+        3,000万件+のデータを学習し、コンテンツがどこで<strong>露出·引用·推薦</strong>されるかを
+        <strong>公開前に</strong>予測します。
       </p>
       <div class="hero-cta-row">
         <a href="#contact" class="btn-primary">
@@ -2150,15 +2161,15 @@ body {
         <a href="#how" class="btn-secondary">エンジンの仕組みを見る</a>
       </div>
       <div class="hero-trust">
-        <span><strong>192件</strong> 公開↔引用 実証</span>
-        <span><strong>BigQuery 30M+</strong> 学習データ</span>
-        <span><strong>12カ国 ISP</strong> リアルブラウザ</span>
+        <span><strong>12+ データソース</strong> 統合</span>
+        <span><strong>BigQuery 30M+</strong> 学習</span>
+        <span><strong>7 AI + 5 SNS</strong> マルチシグナル</span>
       </div>
     </div>
 
     <div class="ai-stream">
       <div class="ai-stream-header">
-        <span class="ai-stream-title">CITATION PROBABILITY · LIVE</span>
+        <span class="ai-stream-title">EXPOSURE + CITATION · LIVE</span>
         <span class="ai-stream-status">ANALYZING</span>
       </div>
 
@@ -2239,10 +2250,67 @@ body {
           </div>
           <div class="ai-platform-rank rank-pending" data-rank="58%">…</div>
         </div>
+
+        <div class="ai-platform-divider">SOCIAL · 推薦アルゴリズム</div>
+
+        <div class="ai-platform" data-platform="tiktok">
+          <div class="ai-platform-logo" style="background:#000000;">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M16 2v6c1.5 1.5 3.5 2 5 2v3c-2 0-4-0.5-5-1.5V18c0 2.5-2 4.5-4.5 4.5S7 20.5 7 18s2-4.5 4.5-4.5c.3 0 .7 0 1 .1v3.1c-.3-.1-.6-.2-1-.2-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5V2h3z"/></svg>
+          </div>
+          <div class="ai-platform-body">
+            <div class="ai-platform-name">TikTok</div>
+            <div class="ai-platform-answer" data-text="FYP進入可 — 最初3秒のフック必要"></div>
+          </div>
+          <div class="ai-platform-rank rank-pending" data-rank="81%">…</div>
+        </div>
+
+        <div class="ai-platform" data-platform="youtube">
+          <div class="ai-platform-logo" style="background:#FF0000;">
+            <svg viewBox="0 0 24 24" fill="white"><polygon points="9.5,7 17,12 9.5,17"/></svg>
+          </div>
+          <div class="ai-platform-body">
+            <div class="ai-platform-name">YouTube</div>
+            <div class="ai-platform-answer" data-text="チュートリアル適合 — 視聴時間 ↑"></div>
+          </div>
+          <div class="ai-platform-rank rank-pending" data-rank="75%">…</div>
+        </div>
+
+        <div class="ai-platform" data-platform="instagram">
+          <div class="ai-platform-logo" style="background:linear-gradient(135deg,#833AB4,#FD1D1D,#FCB045);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="0.8" fill="white"/></svg>
+          </div>
+          <div class="ai-platform-body">
+            <div class="ai-platform-name">Instagram</div>
+            <div class="ai-platform-answer" data-text="Reels·カルーセル適合 — ビジュアル補強"></div>
+          </div>
+          <div class="ai-platform-rank rank-pending" data-rank="68%">…</div>
+        </div>
+
+        <div class="ai-platform" data-platform="x">
+          <div class="ai-platform-logo" style="background:#000000;">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M14.7 10.5L21 3h-2.4l-5.5 6.4L8.7 3H3l6.6 9.7L3 21h2.4l5.8-6.7L15.4 21H21l-6.3-10.5zm-2 2.4l-.7-1L6 4.6h2.4L13.4 12l.7 1L18.7 19.4h-2.4L13.7 13z"/></svg>
+          </div>
+          <div class="ai-platform-body">
+            <div class="ai-platform-name">X (Twitter)</div>
+            <div class="ai-platform-answer" data-text="Thread露出 — 引用可能性 中"></div>
+          </div>
+          <div class="ai-platform-rank rank-pending" data-rank="58%">…</div>
+        </div>
+
+        <div class="ai-platform" data-platform="threads">
+          <div class="ai-platform-logo" style="background:#0F0F0F;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round"><path d="M12.5 4c4 0 6.5 2.5 7 6 .5 4-2 8-6.5 8.5-3 .3-5-1.2-5-3.5 0-2 1.7-3.5 4-3.5 2 0 3.5 1 4 2.5"/><path d="M14 11c-1-1-2.5-1.5-4-1"/></svg>
+          </div>
+          <div class="ai-platform-body">
+            <div class="ai-platform-name">Threads</div>
+            <div class="ai-platform-answer" data-text="テキスト議論適合 — ハッシュタグ拡張"></div>
+          </div>
+          <div class="ai-platform-rank rank-pending" data-rank="49%">…</div>
+        </div>
       </div>
 
       <div class="ai-stream-footer">
-        <span>平均引用確率</span>
+        <span>平均露出確率 (7 AI + 5 SNS)</span>
         <span><strong id="prob-value">0.0%</strong> ↑ 公開後7日以内</span>
       </div>
     </div>
@@ -3116,7 +3184,7 @@ body {
 
     // probability counter starts after platforms revealed
     const probEl = document.getElementById('prob-value');
-    const target = 62.6;
+    const target = 64.1;
     let cur = 0;
     const tick = () => {
       cur += 1.4;
