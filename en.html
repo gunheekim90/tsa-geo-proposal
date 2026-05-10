@@ -9,22 +9,22 @@
 <meta name="author" content="TwoStepsAhead">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <meta name="theme-color" content="#0a0a0a">
-<link rel="canonical" href="https://www.georank24.com/en.html">
-<link rel="alternate" hreflang="ko" href="https://www.georank24.com/ko.html">
-<link rel="alternate" hreflang="en" href="https://www.georank24.com/en.html">
-<link rel="alternate" hreflang="ja" href="https://www.georank24.com/ja.html">
-<link rel="alternate" hreflang="x-default" href="https://www.georank24.com/">
+<link rel="canonical" href="https://www.plurank.com/en.html">
+<link rel="alternate" hreflang="ko" href="https://www.plurank.com/ko.html">
+<link rel="alternate" hreflang="en" href="https://www.plurank.com/en.html">
+<link rel="alternate" hreflang="ja" href="https://www.plurank.com/ja.html">
+<link rel="alternate" hreflang="x-default" href="https://www.plurank.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Plurank — Predictive Marketing AI for the Age of AI Search">
 <meta property="og:description" content="A multi-signal marketing AI model that predicts where your content will be cited and recommended. 7 AI search engines + 5 social platforms across 12 countries.">
-<meta property="og:url" content="https://www.georank24.com/en.html">
+<meta property="og:url" content="https://www.plurank.com/en.html">
 <meta property="og:site_name" content="Plurank">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://www.georank24.com/og-image.png">
+<meta property="og:image" content="https://www.plurank.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Plurank — Predictive Marketing AI for the Age of AI Search">
 <meta name="twitter:description" content="A multi-signal marketing AI model that predicts where your content will be cited and recommended.">
-<meta name="twitter:image" content="https://www.georank24.com/og-image.png">
+<meta name="twitter:image" content="https://www.plurank.com/og-image.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23f5f5f5'/%3E%3Ctext x='50' y='66' text-anchor='middle' fill='%230a0a0a' font-family='Fraunces,Georgia,serif' font-style='italic' font-weight='400' font-size='52'%3EG%3C/text%3E%3C/svg%3E">
 
 <!-- Vercel Web Analytics -->
@@ -33,6 +33,24 @@
 <script defer src="/_vercel/speed-insights/script.js"></script>
 <!-- Citora Lead Pixel -->
 <script async src="https://api.lead.georank24.com/api/pixel?site_key=cl_pk_d6Tj-rUtfPR1fTrHD6QMpYyB"></script>
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Plurank","url":"https://www.plurank.com","logo":"https://www.plurank.com/og-image.png","description":"Multi-signal marketing AI that infers where your content will be cited and recommended — across 12 countries, 7 AI search platforms, and 5 social platforms.","founder":{"@type":"Person","name":"Glenn Kim"},"sameAs":["https://twostepsahead.co.kr"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"Generative Engine Optimization (GEO)","provider":{"@type":"Organization","name":"Plurank"},"name":"Plurank — Predictive Marketing Intelligence","description":"Get a per-AI citation probability score before you publish, plus a country-by-country exposure heatmap across 12 markets."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How is GEO different from SEO?","acceptedAnswer":{"@type":"Answer","text":"SEO targets ranking on the first search page. GEO targets being cited inside AI-generated answers (ChatGPT, Claude, Perplexity). As AI synthesizes answers from multiple sources, becoming a cited source matters more than ranking."}},
+{"@type":"Question","name":"How accurate is the Pluora model?","acceptedAnswer":{"@type":"Answer","text":"Trained weekly on 30M+ publish-to-citation data points captured by 60 workers across 12 countries on 7 AI platforms. MAPE 8.6% — industry-standard accuracy."}},
+{"@type":"Question","name":"Why measure 12 countries simultaneously?","acceptedAnswer":{"@type":"Answer","text":"Same query yields different answers in Korean ChatGPT vs. US ChatGPT. Global brands must see all 12-country answers in parallel to act precisely."}},
+{"@type":"Question","name":"What's different from existing solutions?","acceptedAnswer":{"@type":"Answer","text":"Most tools track either social or AI search alone. Plurank unifies both across 12 countries × 12 channels and predicts citation probability before publishing."}},
+{"@type":"Question","name":"How long until I see value?","acceptedAnswer":{"@type":"Answer","text":"From the first week after the consulting contract — your first 5 Lens report. SaaS launches H2 2026 for instant self-serve."}},
+{"@type":"Question","name":"What does the free diagnostic include?","acceptedAnswer":{"@type":"Answer","text":"Send a content URL, get back the per-AI-platform citation probability plus a score-improvement guide — free, in about 3 minutes."}}
+]}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -549,6 +567,69 @@ body::before {
   .gauge-arc-anim { stroke-dashoffset: 0 !important; }
 }
 
+/* ========== NEW SECTIONS — Fan-out / Build vs / 5 Lens / Partners / 4 Layer / FAQ ========== */
+.fanout-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.fanout-card { background: var(--bg); padding: 28px 24px; transition: background 0.2s ease; }
+.fanout-card:hover { background: var(--bg-soft); }
+.fanout-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.fanout-label { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--highlight); }
+.fanout-count { font-family: var(--f-display); font-weight: 300; font-size: 32px; letter-spacing: -0.025em; line-height: 1; font-variation-settings: "opsz" 96; }
+.fanout-card p { font-size: 13px; line-height: 1.55; color: var(--text-soft); }
+
+.compare-table { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.compare-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; align-items: center; padding: 18px 28px; border-bottom: 1px solid var(--border); font-size: 14px; gap: 16px; }
+.compare-row:last-child { border-bottom: none; }
+.compare-head { background: var(--bg-soft); font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mute); }
+.compare-row > div:first-child { color: var(--text-soft); }
+.compare-row > div:nth-child(2) { color: var(--text-mute); }
+.compare-us { color: var(--text); font-weight: 500; }
+.compare-us strong { color: var(--highlight); font-weight: 500; font-family: var(--f-display); font-style: italic; font-size: 16px; }
+
+.lens-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.lens-card { background: var(--bg); padding: 32px 22px; display: flex; flex-direction: column; gap: 10px; transition: background 0.2s ease; }
+.lens-card:hover { background: var(--bg-soft); }
+.lens-feature { background: var(--bg-soft); }
+.lens-num { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.16em; color: var(--text-mute); margin-bottom: 4px; }
+.lens-card h3 { font-family: var(--f-display); font-weight: 400; font-size: 20px; line-height: 1.2; letter-spacing: -0.015em; }
+.lens-tag { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.04em; color: var(--highlight); margin-bottom: 4px; }
+.lens-card p:not(.lens-tag) { font-size: 13px; line-height: 1.6; color: var(--text-soft); flex: 1; }
+.lens-badge { font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--highlight); padding: 2px 7px; border: 1px solid var(--highlight); border-radius: 999px; margin-left: 4px; vertical-align: 2px; display: inline-block; }
+
+.layer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.layer-card { background: var(--bg); padding: 32px 26px; display: flex; flex-direction: column; gap: 10px; }
+.layer-live { background: var(--bg-soft); }
+.layer-status { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--highlight); margin-bottom: 6px; }
+.layer-card h3 { font-family: var(--f-display); font-weight: 400; font-size: 21px; line-height: 1.2; letter-spacing: -0.015em; }
+.layer-fit { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.04em; color: var(--text-mute); }
+.layer-card p:not(.layer-fit) { font-size: 13px; line-height: 1.6; color: var(--text-soft); flex: 1; }
+.layer-price { font-family: var(--f-mono); font-size: 11px; color: var(--text); padding-top: 14px; border-top: 1px solid var(--border); margin-top: auto; letter-spacing: 0.02em; }
+
+.partner-strip { margin-top: 56px; padding-top: 36px; border-top: 1px solid var(--border); }
+.partner-label { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-mute); margin-bottom: 24px; }
+.partner-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.partner-item { display: flex; gap: 14px; align-items: flex-start; }
+.partner-flag { font-size: 26px; line-height: 1; }
+.partner-info { display: flex; flex-direction: column; gap: 3px; }
+.partner-info strong { color: var(--text); font-family: var(--f-display); font-weight: 400; font-size: 16px; letter-spacing: -0.012em; }
+.partner-info span { font-size: 12px; color: var(--text-mute); line-height: 1.4; }
+
+.faq-list { display: flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.faq-item { background: var(--bg); transition: background 0.2s ease; }
+.faq-item summary { padding: 22px 28px; cursor: pointer; font-family: var(--f-display); font-weight: 400; font-size: 17px; letter-spacing: -0.012em; list-style: none; position: relative; padding-right: 60px; color: var(--text); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; position: absolute; right: 28px; top: 50%; transform: translateY(-50%); font-size: 22px; font-family: var(--f-mono); color: var(--text-mute); }
+.faq-item[open] summary::after { content: "−"; }
+.faq-item[open] { background: var(--bg-soft); }
+.faq-item p { padding: 0 28px 22px; font-size: 14px; line-height: 1.7; color: var(--text-soft); }
+
+@media (max-width: 1100px) {
+  .fanout-grid, .layer-grid, .partner-list, .lens-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 700px) {
+  .fanout-grid, .layer-grid, .partner-list, .lens-grid { grid-template-columns: 1fr; }
+  .compare-row { grid-template-columns: 1fr; gap: 6px; padding: 18px 20px; }
+}
+
 @media (max-width: 1100px) {
   .thesis-kpis { grid-template-columns: repeat(3, 1fr); }
   .insights-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
@@ -578,11 +659,11 @@ body::before {
   <div class="nav-inner">
     <div class="nav-brand">Plu<em>rank</em></div>
     <div class="nav-links">
-      <a href="#mission">Mission</a>
-      <a href="#thesis">Thesis</a>
+      <a href="#fan-out">Why</a>
+      <a href="#lens">5 Lens</a>
       <a href="#how">Pluora</a>
-      <a href="#insights">Insights</a>
-      <a href="#deliverables">Deliverables</a>
+      <a href="#engage">Engage</a>
+      <a href="#faq">FAQ</a>
     </div>
     <div class="nav-meta">
       <a href="/ko.html">KO</a>
@@ -716,6 +797,41 @@ body::before {
   </div>
 </section>
 
+<!-- ===== FAN-OUT · 12+ Channel Dispersion ===== -->
+<section class="section" id="fan-out">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Why tracking has become harder</div>
+        <h2>Once <em>a single search rank</em> — now <em>12+ channels</em> answer at once.</h2>
+      </div>
+      <p class="section-lede">
+        A single user query now triggers ChatGPT answers, TikTok recommendations, Reddit threads, and media citations simultaneously.
+        Without tracking all of these together — <strong>half of your marketing decisions become invisible.</strong>
+      </p>
+    </div>
+
+    <div class="fanout-grid">
+      <div class="fanout-card reveal">
+        <div class="fanout-head"><span class="fanout-label">AI Search</span><span class="fanout-count">7</span></div>
+        <p>ChatGPT · Claude · Perplexity · Gemini · AI Overview · AI Mode · DeepSeek</p>
+      </div>
+      <div class="fanout-card reveal reveal-d1">
+        <div class="fanout-head"><span class="fanout-label">Social</span><span class="fanout-count">5</span></div>
+        <p>TikTok · YouTube · Instagram · X · Threads</p>
+      </div>
+      <div class="fanout-card reveal reveal-d2">
+        <div class="fanout-head"><span class="fanout-label">Community</span><span class="fanout-count">5+</span></div>
+        <p>Reddit · Hacker News · Quora · G2 · Trustpilot</p>
+      </div>
+      <div class="fanout-card reveal reveal-d3">
+        <div class="fanout-head"><span class="fanout-label">Media</span><span class="fanout-count">80+</span></div>
+        <p>Allure · TechCrunch · Mashable · global outlets across 80+ titles</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== THESIS ===== -->
 <section class="section" id="thesis">
   <div class="container">
@@ -790,6 +906,80 @@ body::before {
         <strong>AI-mediated channel of exposure, citation, and recommendation</strong> will become the standard
         marketing infrastructure. That's why <strong>Pluora</strong> is built on
         <strong>multi-signal integrated learning</strong>, not on any single channel.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUILD vs PLURANK ===== -->
+<section class="section" id="build-vs">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Build vs Plurank · Cost & Time</div>
+        <h2>Build it yourself in <em>a year</em>, or use Plurank <em>next week</em>.</h2>
+      </div>
+      <p class="section-lede">
+        Tracking 12 countries × 12 channels in-house requires worker infrastructure, ISP IPs in 12 countries, 248-feature normalization, and a retraining pipeline.
+        An ML team needs 6–12 months full-time — <strong>Plurank replaces all of it with a subscription.</strong>
+      </p>
+    </div>
+
+    <div class="compare-table reveal">
+      <div class="compare-row compare-head"><div></div><div>Build in-house</div><div class="compare-us">Plurank</div></div>
+      <div class="compare-row"><div>Setup time</div><div>6–12 months</div><div class="compare-us"><strong>Next week</strong></div></div>
+      <div class="compare-row"><div>Annual cost</div><div>$250K–$400K</div><div class="compare-us">Subscription (per keyword)</div></div>
+      <div class="compare-row"><div>Headcount</div><div>2–3 (incl. ML engineer)</div><div class="compare-us"><strong>0</strong></div></div>
+      <div class="compare-row"><div>12-country ISP IP infra</div><div>Custom build</div><div class="compare-us">Included</div></div>
+      <div class="compare-row"><div>Weekly auto-update / retraining</div><div>Custom pipeline</div><div class="compare-us">Included</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5 LENS ===== -->
+<section class="section" id="lens">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">5 Lens · What we surface</div>
+        <h2>See <em>where and how</em> your brand appears<br>through five lenses.</h2>
+      </div>
+      <p class="section-lede">
+        We pull together signals scattered across search, social, communities, and media — into five analytical lenses.
+        <strong>What's working now</strong> and <strong>what to improve to lift your score</strong>, both backed by data.
+      </p>
+    </div>
+
+    <div class="lens-grid">
+      <div class="lens-card reveal">
+        <div class="lens-num">01</div>
+        <h3>CitationLens</h3>
+        <div class="lens-tag">Inside 7 AI answers</div>
+        <p>Where your brand is cited and at what rank — captured weekly.</p>
+      </div>
+      <div class="lens-card lens-feature reveal reveal-d1">
+        <div class="lens-num">02</div>
+        <h3>PlatformLens<span class="lens-badge">Only Plurank</span></h3>
+        <div class="lens-tag">The channel where traffic concentrates</div>
+        <p>Whether ChatGPT cites you better or TikTok delivers more reach — we tell you which channel to invest in.</p>
+      </div>
+      <div class="lens-card lens-feature reveal reveal-d2">
+        <div class="lens-num">03</div>
+        <h3>GeoLens<span class="lens-badge">Only Plurank</span></h3>
+        <div class="lens-tag">Country-level gaps across 12 markets</div>
+        <p>Why you're visible in Korea but missing in Japan, where competitors are ahead in the US — at a glance.</p>
+      </div>
+      <div class="lens-card reveal reveal-d3">
+        <div class="lens-num">04</div>
+        <h3>SourceLens</h3>
+        <div class="lens-tag">Cited media & communities</div>
+        <p>Reddit · Hacker News · Allure — knowing which sources AI pulls from sets your PR and contribution priorities.</p>
+      </div>
+      <div class="lens-card reveal reveal-d4">
+        <div class="lens-num">05</div>
+        <h3>BoostLens</h3>
+        <div class="lens-tag">"+N pt if you fix this"</div>
+        <p>Drop a draft URL and we simulate exactly which parts (schema · sources · structure) to strengthen and how much your score lifts.</p>
       </div>
     </div>
   </div>
@@ -999,6 +1189,16 @@ body::before {
         <div class="trust-num" data-count="97.1" data-decimals="1">97.1</div>
         <div class="trust-label">Avg. GEO Score</div>
         <div class="trust-desc">192 published pieces across 12 categories</div>
+      </div>
+    </div>
+
+    <div class="partner-strip reveal">
+      <div class="partner-label">Global · Partners we work with</div>
+      <div class="partner-list">
+        <div class="partner-item"><span class="partner-flag">🇰🇷</span><div class="partner-info"><strong>15+ Korean Partners</strong><span>Ascent AI · Samsung affiliates · medical brands</span></div></div>
+        <div class="partner-item"><span class="partner-flag">🇯🇵</span><div class="partner-info"><strong>Tokuyama Trading</strong><span>Japan consumer-goods distribution</span></div></div>
+        <div class="partner-item"><span class="partner-flag">🇫🇷</span><div class="partner-info"><strong>Kozy.care</strong><span>European wellness market</span></div></div>
+        <div class="partner-item"><span class="partner-flag">🇺🇸</span><div class="partner-info"><strong>BridgeLeaf</strong><span>US GTM partner</span></div></div>
       </div>
     </div>
   </div>
@@ -1230,6 +1430,91 @@ body::before {
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW WE WORK · 4 LAYER ===== -->
+<section class="section" id="engage">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">How We Work · Four Engagement Models</div>
+        <h2>Start today, or plug us into your <em>company-wide</em> systems.</h2>
+      </div>
+      <p class="section-lede">
+        Four entry points — <strong>Consulting · SaaS · API · AI Agent</strong> — sized to your team and goals.
+      </p>
+    </div>
+
+    <div class="layer-grid">
+      <div class="layer-card layer-live reveal">
+        <div class="layer-status">Live · Start today</div>
+        <h3>Consulting</h3>
+        <p class="layer-fit">Enterprise · Global brands</p>
+        <p>Our team delivers <strong style="color:var(--text);">5 Lens analysis + an action guide</strong> weekly. Fastest path to results.</p>
+        <div class="layer-price">~$45K setup + $5K–6K/mo</div>
+      </div>
+      <div class="layer-card reveal reveal-d1">
+        <div class="layer-status">2026 H2</div>
+        <h3>Plurank.app · SaaS</h3>
+        <p class="layer-fit">Mid-market / In-house teams</p>
+        <p>Use 5 Lens self-serve. Drop a keyword, get scores and guidance instantly.</p>
+        <div class="layer-price">Monthly subscription · 3-tier</div>
+      </div>
+      <div class="layer-card reveal reveal-d2">
+        <div class="layer-status">2027</div>
+        <h3>Plurank API + MCP · DaaS</h3>
+        <p class="layer-fit">Enterprise / AI engineering teams</p>
+        <p>Feed citation and recommendation data directly into your in-house AI systems. A company-wide intelligence layer.</p>
+        <div class="layer-price">Custom quote</div>
+      </div>
+      <div class="layer-card reveal reveal-d3">
+        <div class="layer-status">2028</div>
+        <h3>Plurank.AI / .TEAM · Agent</h3>
+        <p class="layer-fit">Every company</p>
+        <p>Autonomous agents handle analysis, simulation, and content generation. CMO Agent leads the team.</p>
+        <div class="layer-price">Pre-register</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head reveal" style="grid-template-columns:1fr;margin-bottom:48px;">
+      <div>
+        <div class="eyebrow">FAQ</div>
+        <h2>Six things people ask most about <em>Plurank</em>.</h2>
+      </div>
+    </div>
+
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>How is GEO different from SEO?</summary>
+        <p>SEO targeted "ranking on the first page of search." GEO targets <strong>"being cited inside answers from ChatGPT, Claude, Perplexity, and others."</strong> As AI synthesizes answers from multiple sources, becoming a cited source matters more than ranking.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How accurate is the Pluora model?</summary>
+        <p>Trained weekly on <strong>30M+ "publish-to-citation" data points</strong> captured by 60 workers across 12 countries on 7 AI platforms. Mean Absolute Percentage Error (MAPE) of 8.6% — at industry-standard accuracy.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Why measure 12 countries simultaneously?</summary>
+        <p>Same query yields different answers in Korean ChatGPT vs. US ChatGPT. Global brands must <strong>see all 12-country answers in parallel</strong> to act precisely.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What's different from existing solutions?</summary>
+        <p>Most existing tools track either social or AI search alone, in a single market. Plurank <strong>unifies both across 12 countries × 12 channels</strong> and predicts citation probability before publishing.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long until I see value?</summary>
+        <p>From the <strong>first week</strong> after the consulting contract — your first 5 Lens report. SaaS launches H2 2026 for instant self-serve.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What does the free diagnostic include?</summary>
+        <p>Send a content URL, get back the <strong>per-AI-platform citation probability + a score-improvement guide</strong> — free, in about 3 minutes.</p>
+      </details>
     </div>
   </div>
 </section>
