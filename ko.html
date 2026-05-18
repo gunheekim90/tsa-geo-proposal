@@ -26,8 +26,9 @@
 <meta name="twitter:description" content="AI 검색에서 브랜드가 발견되는 방식을 측정하고, 콘텐츠 실행까지 연결합니다.">
 <meta name="twitter:image" content="https://www.plurank.com/og-image.png">
 <!-- Favicons & PWA -->
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" href="/favicon.ico" sizes="16x16">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
@@ -64,7 +65,7 @@
   "@type": "Organization",
   "name": "Plurank",
   "url": "https://www.plurank.com",
-  "logo": "https://www.plurank.com/og-image.png",
+  "logo": "https://www.plurank.com/logo-wordmark.png",
   "description": "AI 답변·인용·소스 데이터를 분석하고 채널별 콘텐츠 실행까지 연결해 브랜드가 AI 검색에서 더 잘 발견되도록 돕는 AI Discovery AdTech 플랫폼.",
   "founder": {"@type":"Person","name":"Glenn Kim"},
   "sameAs": ["https://twostepsahead.co.kr","https://georank24-ir.twostepsahead.co.kr"]
@@ -186,9 +187,14 @@ body::before {
   letter-spacing: -0.022em;
   font-variation-settings: "opsz" 96;
   margin-top: 28px;
+  text-wrap: pretty;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
-.section h2 .line { display: block; }
+.section h2 .line { display: inline; }
+.section h2 .line + .line::before { content: " "; }
 .section h2 .keep { white-space: nowrap; }
+.section h2 .no-break { white-space: nowrap; }
 .section h2 em { font-style: normal; font-weight: 400; }
 .section h2 .mute { color: var(--text-mute); }
 .section-lede {
@@ -214,12 +220,17 @@ body::before {
 }
 .nav-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 .nav-brand {
-  font-family: var(--f-display);
-  font-weight: 500;
-  font-size: 21px;
-  letter-spacing: -0.012em;
+  display: inline-flex;
+  align-items: center;
+  width: 154px;
+  flex: 0 0 auto;
 }
-.nav-brand em { font-style: normal; font-weight: 400; color: var(--text-soft); }
+.nav-brand img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 .nav-links { display: flex; gap: 28px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mute); }
 .nav-links a { transition: color 0.2s ease; }
 .nav-links a:hover { color: var(--text); }
@@ -235,6 +246,7 @@ body::before {
 }
 .nav-pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--highlight); }
 @media (max-width: 900px) { .nav-links { display: none; } }
+@media (max-width: 560px) { .nav { padding: 18px 20px; } .nav-brand { width: 132px; } }
 
 /* ========== BUTTONS ========== */
 .btn {
@@ -267,8 +279,12 @@ body::before {
   letter-spacing: -0.025em;
   font-variation-settings: "opsz" 96;
   margin-top: 32px;
+  text-wrap: pretty;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
-.hero h1 .line { display: block; }
+.hero h1 .line { display: inline; }
+.hero h1 .line + .line::before { content: " "; }
 .hero h1 .nowrap { white-space: nowrap; }
 .hero h1 em { font-style: normal; font-weight: 400; font-variation-settings: "opsz" 144; }
 .hero h1 .accent { color: var(--text-mute); }
@@ -1431,7 +1447,9 @@ body::before {
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="nav-brand">Plu<em>rank</em></div>
+    <a href="/" class="nav-brand" aria-label="Plurank home">
+      <img src="/logo-wordmark.png" alt="Plurank AI Discovery AdTech" width="600" height="172">
+    </a>
     <div class="nav-links">
       <a href="#market">Question</a>
       <a href="#fan-out">Signals</a>
@@ -1782,8 +1800,7 @@ body::before {
       <div>
         <div class="eyebrow">Why This Matters</div>
         <h2>
-          <span class="line">검색 순위만으로는</span>
-          <span class="line"><em>발견을 설명하기 어려워졌습니다</em>.</span>
+          <span class="line">검색 <span class="no-break">순위만으로는 <em>발견을</em></span> <em>설명하기 어려워졌습니다</em>.</span>
         </h2>
       </div>
       <p class="section-lede">

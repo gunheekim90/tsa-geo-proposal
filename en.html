@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plurank — Predictive Marketing AI for the Age of AI Search</title>
-<meta name="description" content="A multi-signal marketing AI model that predicts where your content will be cited and recommended. 7 AI search engines + 5 social platforms across 12 countries, trained on real browser data.">
-<meta name="keywords" content="GEO, GEO optimization, AI search optimization, marketing intelligence, ChatGPT citation, Perplexity, Pluora, Plurank, predictive marketing AI">
+<title>Plurank — AI Discovery AdTech for Generative Search</title>
+<meta name="description" content="Plurank measures the questions, citations, and source signals that shape AI search visibility, then turns them into website, social, community, and PR content execution.">
+<meta name="keywords" content="GEO, generative engine optimization, AI search optimization, marketing intelligence, ChatGPT citation, Perplexity, Pluora, Plurank, AI Discovery AdTech">
 <meta name="author" content="TwoStepsAhead">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <meta name="theme-color" content="#0a0a0a">
@@ -15,50 +15,90 @@
 <link rel="alternate" hreflang="ja" href="https://www.plurank.com/ja.html">
 <link rel="alternate" hreflang="x-default" href="https://www.plurank.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Plurank — Predictive Marketing AI for the Age of AI Search">
-<meta property="og:description" content="A multi-signal marketing AI model that predicts where your content will be cited and recommended. 7 AI search engines + 5 social platforms across 12 countries.">
+<meta property="og:title" content="Plurank — AI Discovery AdTech for Generative Search">
+<meta property="og:description" content="Plurank analyzes AI answers, citations, and source signals, then connects them to channel-by-channel content execution.">
 <meta property="og:url" content="https://www.plurank.com/en.html">
 <meta property="og:site_name" content="Plurank">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://www.plurank.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Plurank — Predictive Marketing AI for the Age of AI Search">
-<meta name="twitter:description" content="A multi-signal marketing AI model that predicts where your content will be cited and recommended.">
+<meta name="twitter:title" content="Plurank — AI Discovery AdTech">
+<meta name="twitter:description" content="Measure how brands are discovered in AI search and turn the data into content execution.">
 <meta name="twitter:image" content="https://www.plurank.com/og-image.png">
 <!-- Favicons & PWA -->
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" href="/favicon.ico" sizes="16x16">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<!-- Search engine verification (※ 사용자 작업 필요: 각 콘솔에서 발급받은 값으로 교체) -->
+<!-- Search engine verification: replace with tokens from each console -->
 <!-- <meta name="google-site-verification" content="REPLACE_WITH_GSC_TOKEN"> -->
 <!-- <meta name="naver-site-verification" content="REPLACE_WITH_NAVER_TOKEN"> -->
 <!-- <meta name="msvalidate.01" content="REPLACE_WITH_BING_TOKEN"> -->
 
-<!-- Vercel Web Analytics -->
-<script defer src="/_vercel/insights/script.js"></script>
-<!-- Vercel Speed Insights -->
-<script defer src="/_vercel/speed-insights/script.js"></script>
-<!-- Citora Lead Pixel -->
-<script async src="https://api.lead.georank24.com/api/pixel?site_key=cl_pk_d6Tj-rUtfPR1fTrHD6QMpYyB"></script>
+<!-- Analytics -->
+<script>
+(function () {
+  var host = window.location.hostname;
+  var isLocal = !host || host === 'localhost' || host === '127.0.0.1' || host === '::1';
+  if (isLocal) return;
+
+  [
+    { src: '/_vercel/insights/script.js', defer: true },
+    { src: '/_vercel/speed-insights/script.js', defer: true },
+    { src: 'https://api.lead.georank24.com/api/pixel?site_key=cl_pk_d6Tj-rUtfPR1fTrHD6QMpYyB', async: true }
+  ].forEach(function (asset) {
+    var script = document.createElement('script');
+    script.src = asset.src;
+    if (asset.defer) script.defer = true;
+    if (asset.async) script.async = true;
+    document.head.appendChild(script);
+  });
+})();
+</script>
 
 <!-- Structured Data: Organization -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Plurank","url":"https://www.plurank.com","logo":"https://www.plurank.com/og-image.png","description":"Multi-signal marketing AI that infers where your content will be cited and recommended — across 12 countries, 7 AI search platforms, and 5 social platforms.","founder":{"@type":"Person","name":"Glenn Kim"},"sameAs":["https://twostepsahead.co.kr"]}
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Plurank",
+  "url": "https://www.plurank.com",
+  "logo": "https://www.plurank.com/logo-wordmark.png",
+  "description": "An AI Discovery AdTech platform that analyzes AI answers, citations, and source signals, then connects them to channel-by-channel content execution so brands are discovered in AI search.",
+  "founder": {"@type":"Person","name":"Glenn Kim"},
+  "sameAs": ["https://twostepsahead.co.kr","https://georank24-ir.twostepsahead.co.kr"]
+}
 </script>
+
+<!-- Structured Data: Service -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","serviceType":"Generative Engine Optimization (GEO)","provider":{"@type":"Organization","name":"Plurank"},"name":"Plurank — Predictive Marketing Intelligence","description":"Get a per-AI citation probability score before you publish, plus a country-by-country exposure heatmap across 12 markets."}
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Generative Engine Optimization (GEO)",
+  "provider": {"@type":"Organization","name":"Plurank"},
+  "name": "Plurank — AI Discovery AdTech Platform",
+  "description": "Analyzes brand mentions, cited sources, competitor positions, country-level differences, and execution priorities inside AI answers, then connects them to GEO strategy and channel content execution.",
+  "areaServed": [{"@type":"Country","name":"KR"},{"@type":"Country","name":"US"},{"@type":"Country","name":"JP"},{"@type":"Country","name":"GB"},{"@type":"Country","name":"DE"},{"@type":"Country","name":"FR"},{"@type":"Country","name":"ES"},{"@type":"Country","name":"IT"},{"@type":"Country","name":"IN"},{"@type":"Country","name":"BR"},{"@type":"Country","name":"ID"},{"@type":"Country","name":"AE"}]
+}
 </script>
+
+<!-- Structured Data: FAQPage -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"How is GEO different from SEO?","acceptedAnswer":{"@type":"Answer","text":"SEO targets ranking on the first search page. GEO targets being cited inside AI-generated answers (ChatGPT, Claude, Perplexity). As AI synthesizes answers from multiple sources, becoming a cited source matters more than ranking."}},
-{"@type":"Question","name":"How accurate is the Pluora model?","acceptedAnswer":{"@type":"Answer","text":"Trained weekly on 30M+ publish-to-citation data points captured by 60 workers across 12 countries on 7 AI platforms. MAPE 8.6% — industry-standard accuracy."}},
-{"@type":"Question","name":"Why measure 12 countries simultaneously?","acceptedAnswer":{"@type":"Answer","text":"Same query yields different answers in Korean ChatGPT vs. US ChatGPT. Global brands must see all 12-country answers in parallel to act precisely."}},
-{"@type":"Question","name":"What's different from existing solutions?","acceptedAnswer":{"@type":"Answer","text":"Most tools track either social or AI search alone. Plurank unifies both across 12 countries × 12 channels and predicts citation probability before publishing."}},
-{"@type":"Question","name":"How long until I see value?","acceptedAnswer":{"@type":"Answer","text":"From the first week after the consulting contract — your first 5 Lens report. SaaS launches H2 2026 for instant self-serve."}},
-{"@type":"Question","name":"What does the free diagnostic include?","acceptedAnswer":{"@type":"Answer","text":"Send a content URL, get back the per-AI-platform citation probability plus a score-improvement guide — free, in about 3 minutes."}}
-]}
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How is GEO different from SEO?","acceptedAnswer":{"@type":"Answer","text":"SEO focused on ranking in search results. GEO focuses on the likelihood that a brand and its content will be cited inside AI answers from ChatGPT, Claude, Perplexity, and similar platforms."}},
+    {"@type":"Question","name":"How accurate is the Pluora model?","acceptedAnswer":{"@type":"Answer","text":"Pluora learns from 30M+ empirical data points captured weekly across 12 countries and 7 AI platforms. Current average prediction error (MAPE) is 8.6%."}},
+    {"@type":"Question","name":"Why measure 12 countries at once?","acceptedAnswer":{"@type":"Answer","text":"The same keyword can produce different ChatGPT answers in Korea and the United States. Global brands need country-level answer differences to set the right execution priorities."}},
+    {"@type":"Question","name":"What makes Plurank different from competitors?","acceptedAnswer":{"@type":"Answer","text":"Most tools stop at monitoring or search analytics. Plurank connects AI answers, source signals, channel content execution, and pre-publish prediction into one operating loop."}},
+    {"@type":"Question","name":"How long does onboarding take?","acceptedAnswer":{"@type":"Answer","text":"After a consulting agreement, the first 5 Lens report can start the following week. The SaaS product is planned for H2 2026."}},
+    {"@type":"Question","name":"What is included in the free diagnostic?","acceptedAnswer":{"@type":"Answer","text":"Send a brand URL or a question you want to diagnose, and we will summarize AI answer visibility, cited sources, competitor position, and improvement priorities."}}
+  ]
+}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -147,7 +187,14 @@ body::before {
   letter-spacing: -0.022em;
   font-variation-settings: "opsz" 96;
   margin-top: 28px;
+  text-wrap: pretty;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
+.section h2 .line { display: inline; }
+.section h2 .line + .line::before { content: " "; }
+.section h2 .keep { white-space: nowrap; }
+.section h2 .no-break { white-space: nowrap; }
 .section h2 em { font-style: normal; font-weight: 400; }
 .section h2 .mute { color: var(--text-mute); }
 .section-lede {
@@ -173,12 +220,17 @@ body::before {
 }
 .nav-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 .nav-brand {
-  font-family: var(--f-display);
-  font-weight: 500;
-  font-size: 21px;
-  letter-spacing: -0.012em;
+  display: inline-flex;
+  align-items: center;
+  width: 154px;
+  flex: 0 0 auto;
 }
-.nav-brand em { font-style: normal; font-weight: 400; color: var(--text-soft); }
+.nav-brand img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 .nav-links { display: flex; gap: 28px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mute); }
 .nav-links a { transition: color 0.2s ease; }
 .nav-links a:hover { color: var(--text); }
@@ -194,6 +246,7 @@ body::before {
 }
 .nav-pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--highlight); }
 @media (max-width: 900px) { .nav-links { display: none; } }
+@media (max-width: 560px) { .nav { padding: 18px 20px; } .nav-brand { width: 132px; } }
 
 /* ========== BUTTONS ========== */
 .btn {
@@ -221,13 +274,18 @@ body::before {
 .hero h1 {
   font-family: var(--f-display);
   font-weight: 300;
-  font-size: clamp(40px, 5.6vw, 72px);
+  font-size: 64px;
   line-height: 1.05;
   letter-spacing: -0.025em;
   font-variation-settings: "opsz" 96;
   margin-top: 32px;
+  text-wrap: pretty;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
-.hero h1 .line { display: block; }
+.hero h1 .line { display: inline; }
+.hero h1 .line + .line::before { content: " "; }
+.hero h1 .nowrap { white-space: nowrap; }
 .hero h1 em { font-style: normal; font-weight: 400; font-variation-settings: "opsz" 144; }
 .hero h1 .accent { color: var(--text-mute); }
 .hero-sub { margin-top: 36px; font-size: 17px; line-height: 1.7; color: var(--text-soft); max-width: 560px; }
@@ -244,113 +302,288 @@ body::before {
   text-transform: none; margin-bottom: 4px; font-variation-settings: "opsz" 60;
 }
 
-.hero-aside {
+.hero-positioning {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.hero-positioning span {
   border: 1px solid var(--border);
-  border-radius: 8px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0));
-  padding: 28px;
-  position: sticky; top: 110px;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  background: rgba(255,255,255,0.025);
 }
-.aside-head { display: flex; justify-content: space-between; align-items: center; padding-bottom: 16px; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
-.aside-title { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-mute); }
-.aside-status { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em; color: var(--highlight); display: inline-flex; align-items: center; gap: 6px; }
-.aside-status::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; animation: pulse 1.6s ease-in-out infinite; }
-@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
-.aside-prompt {
-  font-family: var(--f-display); font-style: normal; font-weight: 300;
-  font-size: 17px; line-height: 1.55; color: var(--text-soft);
-  margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px solid var(--border);
-  min-height: 28px;
+
+.hero-visual {
+  position: sticky;
+  top: 104px;
+  min-height: 640px;
 }
-.aside-prompt-text { display: inline; }
+.discovery-scene {
+  position: relative;
+  min-height: 640px;
+  overflow: hidden;
+  isolation: isolate;
+}
+.discovery-scene::before {
+  content: "";
+  position: absolute;
+  inset: 7% 4% 8% 4%;
+  border-top: 1px solid rgba(255,255,255,0.09);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  opacity: 0.75;
+  pointer-events: none;
+}
+.discovery-scene::after {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(245,158,11,0.48), transparent);
+  transform: translateY(-50%);
+  opacity: 0.6;
+  pointer-events: none;
+}
+#discovery-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.scene-panel {
+  position: absolute;
+  z-index: 2;
+  border: 1px solid rgba(255,255,255,0.11);
+  background: rgba(10,10,10,0.58);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.28);
+}
+.scene-prompt {
+  top: 38px;
+  left: 0;
+  right: 12%;
+  padding: 18px 20px;
+}
+.scene-label {
+  display: block;
+  font-family: var(--f-mono);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 10px;
+}
+.scene-prompt strong {
+  display: block;
+  font-family: var(--f-display);
+  font-size: 19px;
+  line-height: 1.45;
+  font-weight: 300;
+  color: var(--text-soft);
+}
 .aside-prompt-cursor {
-  display: inline-block; width: 2px; height: 0.9em;
-  background: var(--text-soft); vertical-align: -0.12em;
-  margin-left: 3px; animation: typing-blink 0.9s steps(2) infinite;
+  display: inline-block;
+  width: 2px;
+  height: 0.9em;
+  background: var(--text-soft);
+  vertical-align: -0.12em;
+  margin-left: 3px;
+  animation: typing-blink 0.9s steps(2) infinite;
 }
-.aside-prompt.done .aside-prompt-cursor { opacity: 0.25; animation: none; }
+.scene-prompt.done .aside-prompt-cursor { opacity: 0.25; animation: none; }
 @keyframes typing-blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
 
-.aside-commentary {
-  font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.03em;
-  color: var(--highlight); padding: 10px 14px; margin-bottom: 18px;
-  border-left: 2px solid var(--highlight); background: rgba(245,158,11,0.05);
-  min-height: 38px; line-height: 1.5;
-  opacity: 0; transform: translateY(-4px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+.scene-core {
+  right: 0;
+  bottom: 74px;
+  width: min(238px, 46%);
+  padding: 22px;
+  z-index: 4;
 }
-.aside-commentary.show { opacity: 1; transform: translateY(0); }
-.aside-commentary-cursor {
-  display: inline-block; width: 1.5px; height: 0.85em;
-  background: var(--highlight); margin-left: 2px;
-  vertical-align: -0.1em; animation: typing-blink 0.7s steps(2) infinite;
+.scene-core strong {
+  display: block;
+  font-family: var(--f-display);
+  font-size: 44px;
+  line-height: 1;
+  font-weight: 300;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
 }
-
-.aside-foot {
-  margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border);
-  display: flex; justify-content: space-between; align-items: baseline;
-  font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--text-mute);
+.scene-core strong .pct {
+  font-size: 0.48em;
+  color: var(--text-mute);
+  margin-left: 2px;
 }
-.aside-foot strong {
-  font-family: var(--f-display); font-weight: 300; font-style: normal;
-  font-size: 26px; letter-spacing: -0.02em; text-transform: none;
-  color: var(--text); font-variation-settings: "opsz" 96;
+.scene-core p {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text-soft);
 }
-.aside-foot strong .pct { font-size: 0.55em; color: var(--text-mute); font-style: normal; margin-left: 1px; }
-
-.platform-row {
+.scene-signal-stack {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  bottom: 26px;
+  width: min(272px, 52%);
+  display: grid;
+  gap: 8px;
+}
+.scene-signal {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
-  column-gap: 12px;
-  row-gap: 5px;
-  padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px;
-  position: relative;
-  transition: background 0.25s ease, padding 0.25s ease, margin 0.25s ease;
+  gap: 4px 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255,255,255,0.09);
+  background: rgba(10,10,10,0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
-.platform-row:last-child { border-bottom: none; padding-bottom: 0; }
-.platform-name { font-weight: 500; transition: color 0.25s ease; grid-column: 1; grid-row: 1; }
-.platform-rank { font-family: var(--f-mono); color: var(--text-mute); font-size: 13px; font-variant-numeric: tabular-nums; transition: color 0.25s ease; grid-column: 2; grid-row: 1; align-self: center; }
-.platform-rank.high { color: var(--text); font-weight: 500; }
-.platform-rank.pending { color: var(--text-faint); font-size: 14px; letter-spacing: 0.1em; }
-.platform-answer {
-  grid-column: 1 / -1; grid-row: 2;
+.scene-signal span {
   font-family: var(--f-mono);
-  font-size: 11px;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.scene-signal strong {
+  grid-column: 1;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-soft);
+}
+.scene-signal-score {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-family: var(--f-mono);
+  font-size: 13px;
+  color: var(--text-mute);
+  font-variant-numeric: tabular-nums;
+}
+.scene-signal-copy {
+  grid-column: 1 / -1;
+  min-height: 14px;
+  font-family: var(--f-mono);
+  font-size: 9px;
+  line-height: 1.4;
   letter-spacing: 0.02em;
   color: var(--text-mute);
-  line-height: 1.45;
-  min-height: 14px;
 }
-.platform-row.is-active .platform-answer { color: var(--highlight); }
-.platform-row.is-active {
-  background: rgba(245,158,11,0.06);
-  margin: 0 -10px;
-  padding-left: 10px; padding-right: 10px;
-  border-radius: 3px;
+.scene-signal.is-active {
+  transform: translateX(8px);
+  border-color: rgba(245,158,11,0.58);
+  background: rgba(245,158,11,0.09);
 }
-.platform-row.is-active .platform-name { color: var(--highlight); }
-.platform-row.is-active::before {
-  content: ""; position: absolute; left: -2px; top: 50%; transform: translateY(-50%);
-  width: 4px; height: 4px; border-radius: 50%;
-  background: var(--highlight);
-  box-shadow: 0 0 0 4px rgba(245,158,11,0.18);
+.scene-signal.is-active strong,
+.scene-signal.is-active .scene-signal-copy,
+.scene-signal.is-active .scene-signal-score {
+  color: var(--highlight);
 }
-.platform-group { display: flex; flex-direction: column; }
-.platform-group + .platform-group { margin-top: 18px; }
-.platform-group-head {
-  font-family: var(--f-mono); font-size: 9px; font-weight: 500;
-  letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-faint);
-  padding: 0 0 10px;
-  display: flex; align-items: center; justify-content: space-between;
+.scene-source {
+  position: absolute;
+  z-index: 2;
+  padding: 9px 11px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(10,10,10,0.45);
+  color: var(--text-soft);
+  font-family: var(--f-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
-.platform-group-head .ghead-count { color: var(--text-mute); }
+.scene-source strong {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--f-sans);
+  font-size: 12px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text);
+  font-weight: 500;
+}
+.source-owned { top: 170px; left: 4%; }
+.source-earned { top: 168px; right: 2%; }
+.source-social { top: 338px; left: 2%; }
+.source-community { top: 360px; right: 5%; }
+.scene-status {
+  position: absolute;
+  z-index: 3;
+  top: 118px;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--highlight);
+}
+.scene-status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
 
 /* ========== MISSION ========== */
 .mission-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
 .mission-body p { font-size: 17px; line-height: 1.75; color: var(--text-soft); margin-bottom: 20px; }
 .mission-body p strong { color: var(--text); font-weight: 500; }
+.position-ladder {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.position-step {
+  background: var(--bg);
+  padding: 24px 20px;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.position-step-feature {
+  background: linear-gradient(180deg, rgba(245,158,11,0.11), rgba(255,255,255,0.025));
+}
+.position-step span {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+}
+.position-step strong {
+  font-family: var(--f-display);
+  font-size: 21px;
+  line-height: 1.15;
+  font-weight: 400;
+  color: var(--text);
+}
+.position-step p {
+  margin: auto 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-soft);
+}
 .mission-pillars { margin-top: 40px; display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); }
 .mission-pillar {
   background: var(--bg);
@@ -633,10 +866,13 @@ body::before {
 .faq-item p { padding: 0 28px 22px; font-size: 14px; line-height: 1.7; color: var(--text-soft); }
 
 @media (max-width: 1100px) {
-  .fanout-grid, .layer-grid, .partner-list, .lens-grid { grid-template-columns: repeat(2, 1fr); }
+  .fanout-grid, .layer-grid, .partner-list { grid-template-columns: repeat(2, 1fr); }
+  .lens-grid { grid-template-columns: repeat(2, 1fr); }
+  .position-ladder { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 700px) {
   .fanout-grid, .layer-grid, .partner-list, .lens-grid { grid-template-columns: 1fr; }
+  .position-ladder { grid-template-columns: 1fr; }
   .compare-row { grid-template-columns: 1fr; gap: 6px; padding: 18px 20px; }
 }
 
@@ -655,11 +891,33 @@ body::before {
   .insights-grid, .why-grid, .thesis-kpis, .trust-grid { grid-template-columns: 1fr; }
   .hero-trust { grid-template-columns: 1fr 1fr; gap: 20px; }
   .hero, .section { padding: 80px 0; }
+  .hero h1 { font-size: 56px; }
   .container, .container-narrow, .nav { padding-left: 20px; padding-right: 20px; }
   .cta-card { padding: 48px 28px; }
   .cta-form { grid-template-columns: 1fr; }
   .cta-form input[name="company"], .cta-form input[name="email"], .cta-form input[name="url"], .cta-form button { grid-column: span 1; }
-  .hero-aside { position: static; }
+  .hero-visual { position: static; min-height: 560px; }
+  .discovery-scene { min-height: 560px; }
+  .scene-prompt { top: 8px; right: 0; }
+  .scene-status { top: 104px; }
+}
+
+@media (max-width: 520px) {
+  .hero h1 { font-size: 45px; line-height: 1.08; }
+  .section h2 .keep { white-space: normal; }
+  .hero-positioning span { width: calc(50% - 4px); text-align: center; }
+  .hero-visual { min-height: 780px; }
+  .discovery-scene { min-height: 780px; margin: 0 -6px; scroll-margin-top: 92px; }
+  .scene-prompt { left: 6px; right: 6px; padding: 16px; }
+  .scene-status { top: 112px; right: 8px; }
+  .scene-source { display: none; }
+  .scene-signal-stack { left: 6px; right: 6px; top: 430px; bottom: auto; width: auto; }
+  .scene-core { top: 248px; right: 6px; bottom: auto; width: calc(100% - 12px); padding: 18px; }
+  .scene-core strong { font-size: 38px; }
+}
+
+@media (max-width: 360px) {
+  .hero h1 .nowrap { white-space: normal; }
 }
 
 
@@ -873,6 +1131,275 @@ body::before {
   background: var(--border, #2a2a2a);
 }
 
+/* === Narrative sections: question market / AI source map / global use cases === */
+.question-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.question-panel {
+  background: var(--bg);
+  padding: 44px;
+  min-height: 420px;
+}
+.question-panel-feature {
+  background:
+    linear-gradient(180deg, rgba(245,158,11,0.07), rgba(255,255,255,0.015)),
+    var(--bg-soft);
+}
+.question-list {
+  display: grid;
+  gap: 14px;
+}
+.question-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px 20px;
+  background: rgba(255,255,255,0.02);
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+.question-card:hover {
+  border-color: var(--border-strong);
+  background: rgba(255,255,255,0.04);
+  transform: translateY(-1px);
+}
+.question-tag {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--highlight);
+  margin-bottom: 8px;
+}
+.question-card p {
+  font-family: var(--f-display);
+  font-size: clamp(18px, 2vw, 23px);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  font-weight: 300;
+  color: var(--text);
+}
+.answer-path {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.answer-step {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+.answer-step:last-child { border-bottom: none; }
+.answer-step-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  color: var(--highlight);
+}
+.answer-step h3 {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+  margin-bottom: 6px;
+}
+.answer-step p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-soft);
+}
+.source-map {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+.source-column {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  padding: 24px;
+  min-height: 260px;
+}
+.source-column-feature {
+  background:
+    linear-gradient(180deg, rgba(245,158,11,0.08), rgba(255,255,255,0.015)),
+    var(--bg-soft);
+  border-color: var(--border-strong);
+}
+.source-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-faint);
+  font-family: var(--f-mono);
+  font-size: 20px;
+}
+.source-column h3 {
+  font-family: var(--f-display);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  margin-bottom: 16px;
+}
+.source-column p {
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.source-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+.source-tags span {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--text-mute);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 9px;
+}
+.loop-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.loop-card {
+  background: var(--bg);
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.loop-card-feature { background: var(--bg-soft); }
+.loop-num {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--text-mute);
+}
+.loop-card h3 {
+  font-family: var(--f-display);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+.loop-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+.channel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.channel-card {
+  background: var(--bg);
+  padding: 30px 24px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.channel-card-feature {
+  background:
+    linear-gradient(180deg, rgba(245,158,11,0.08), rgba(255,255,255,0.015)),
+    var(--bg-soft);
+}
+.channel-card h3 {
+  font-family: var(--f-display);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+.channel-card p {
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.62;
+}
+.channel-list {
+  margin-top: auto;
+  display: grid;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.channel-list span {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+}
+.usecase-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.usecase-card {
+  background: var(--bg);
+  padding: 30px 24px;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.usecase-card h3 {
+  font-family: var(--f-display);
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+.usecase-card p {
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.62;
+}
+.usecase-tag {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--highlight);
+}
+
+@media (max-width: 1100px) {
+  .source-map { grid-template-columns: 1fr; }
+  .source-arrow { transform: rotate(90deg); padding: 8px 0; }
+  .loop-grid, .channel-grid, .usecase-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
+  .question-grid { grid-template-columns: 1fr; }
+  .question-panel { padding: 30px 24px; min-height: auto; }
+}
+@media (max-width: 700px) {
+  .loop-grid, .channel-grid, .usecase-grid { grid-template-columns: 1fr; }
+}
+
 </style>
 
 <!-- Structured Data: WebSite (with SearchAction) -->
@@ -904,11 +1431,11 @@ body::before {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Plurank",
-  "description": "AI 검색 시대의 GEO 데이터 인프라. 7개 AI 검색 × 12개국 실측 데이터로 콘텐츠 인용 확률을 예측합니다.",
+  "description": "An AI Discovery AdTech platform that measures which questions expose a brand, which sources AI cites, and how those insights turn into channel-level content execution.",
   "brand": {"@type":"Brand","name":"Plurank"},
   "category": "Generative Engine Optimization (GEO) Data Platform",
   "offers": [
-    {"@type":"Offer","name":"Enterprise Consulting","description":"엔터프라이즈 GEO 전략 컨설팅","priceCurrency":"KRW","price":"7000000","priceSpecification":{"@type":"UnitPriceSpecification","unitText":"per month","priceCurrency":"KRW","price":"7000000"},"availability":"https://schema.org/InStock"},
+    {"@type":"Offer","name":"Enterprise Consulting","description":"Enterprise GEO strategy consulting","priceCurrency":"KRW","price":"7000000","priceSpecification":{"@type":"UnitPriceSpecification","unitText":"per month","priceCurrency":"KRW","price":"7000000"},"availability":"https://schema.org/InStock"},
     {"@type":"Offer","name":"SaaS Entry","description":"Plurank.app Entry tier","priceCurrency":"KRW","price":"240000","priceSpecification":{"@type":"UnitPriceSpecification","unitText":"per month","priceCurrency":"KRW","price":"240000"},"availability":"https://schema.org/PreOrder"},
     {"@type":"Offer","name":"SaaS Growth","description":"Plurank.app Growth tier","priceCurrency":"KRW","price":"990000","priceSpecification":{"@type":"UnitPriceSpecification","unitText":"per month","priceCurrency":"KRW","price":"990000"},"availability":"https://schema.org/PreOrder"}
   ]
@@ -920,13 +1447,16 @@ body::before {
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="nav-brand">Plu<em>rank</em></div>
+    <a href="/" class="nav-brand" aria-label="Plurank home">
+      <img src="/logo-wordmark.png" alt="Plurank AI Discovery AdTech" width="600" height="172">
+    </a>
     <div class="nav-links">
-      <a href="#fan-out">Why</a>
-      <a href="#lens">5 Lens</a>
+      <a href="#market">Question</a>
+      <a href="#fan-out">Signals</a>
+      <a href="#channel-activation">Content</a>
       <a href="#how">Pluora</a>
-      <a href="#engage">Engage</a>
-      <a href="#faq">FAQ</a>
+      <a href="#global">Global</a>
+      <a href="#contact">Diagnostic</a>
     </div>
     <div class="nav-meta">
       <a href="/ko.html">KO</a>
@@ -943,68 +1473,86 @@ body::before {
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow">The Data Layer for AI Search</div>
+        <div class="eyebrow">AI Discovery AdTech</div>
         <h1>
-          <span class="line accent">Stop guessing.</span>
-          <span class="line">Start measuring.</span>
+          <span class="line nowrap">A user question</span>
+          <span class="line accent">is changing the path</span>
+          <span class="line">to brand discovery.</span>
         </h1>
         <p class="hero-sub">
-          What <strong>Semrush</strong> did for SEO, <strong>Plurank</strong> does for GEO.
-          The <strong>data infrastructure for every agency, brand, and developer</strong>
-          measuring AI before it answers — and predicting before you publish.
+          When users ask ChatGPT, Gemini, Claude, or Perplexity about a brand,
+          the answer is not built from the homepage alone.
+          Official docs, reviews, videos, communities, and local media signals all shape the response.
+          <strong>Plurank is an AI Discovery AdTech platform that measures this process, executes the missing channel content, and feeds the results back into the Pluora model</strong>.
         </p>
+        <div class="hero-positioning" aria-label="AI Discovery AdTech positioning">
+          <span>Answer Data</span>
+          <span>Channel Content</span>
+          <span>Global GEO</span>
+          <span>Pluora Learning</span>
+        </div>
         <div class="hero-cta">
           <a href="#" class="btn btn-primary" data-pl-open="demo">
-            Request a Demo
+            Get an AI Visibility Diagnostic
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
+          <a href="#market" class="btn btn-ghost">See how questions become discovery paths</a>
         </div>
         <div class="hero-trust">
           <div class="trust-item"><strong>7</strong>AI Platforms</div>
           <div class="trust-item"><strong>12</strong>Countries</div>
-          <div class="trust-item"><strong>30M+</strong>Records</div>
-          <div class="trust-item"><strong>MAPE 8.6%</strong>Prediction</div>
+          <div class="trust-item"><strong>Multi</strong>Source Signals</div>
+          <div class="trust-item"><strong>Pluora</strong>Prediction Model</div>
         </div>
       </div>
 
-      <aside class="hero-aside">
-        <div class="aside-head">
-          <span class="aside-title">Exposure + Citation · Live</span>
-          <span class="aside-status">Analyzing</span>
-        </div>
-        <div class="aside-prompt" id="aside-prompt">
-          <span class="aside-prompt-text" id="prompt-text"></span><span class="aside-prompt-cursor"></span>
-        </div>
+      <aside class="hero-visual" aria-label="AI Discovery AdTech 3D signal map">
+        <div class="discovery-scene" id="discovery-scene">
+          <canvas id="discovery-canvas" aria-hidden="true"></canvas>
+          <div class="scene-status">Live Signal Graph</div>
 
-        <div class="platform-group">
-          <div class="platform-group-head">
-            <span>AI Search · Citation</span>
-            <span class="ghead-count">7</span>
+          <div class="scene-panel scene-prompt" id="aside-prompt">
+            <span class="scene-label">Question enters the market</span>
+            <strong><span id="prompt-text"></span><span class="aside-prompt-cursor"></span></strong>
           </div>
-          <div class="platform-row" data-rank="82" data-answer="Ingredient comparison + clinical data — strong citation"><span class="platform-name">ChatGPT</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="71" data-answer="Dermatologist sources + safety evidence — solid match"><span class="platform-name">Claude</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="68" data-answer="Allure · Glow Recipe — authority outlets cited first"><span class="platform-name">Perplexity</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="63" data-answer="Deep ingredient comparison — category weight ↑"><span class="platform-name">AI Mode</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="58" data-answer="Ingredient science — research & clinical sources favored"><span class="platform-name">DeepSeek</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="54" data-answer="Search Grounding — review diversity needs reinforcement"><span class="platform-name">Gemini</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="47" data-answer="Top-ranked domains favored — add FAQ schema"><span class="platform-name">AI Overview</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-        </div>
 
-        <div class="platform-group">
-          <div class="platform-group-head">
-            <span>Social · Recommendation</span>
-            <span class="ghead-count">5</span>
+          <div class="scene-source source-owned">Owned<strong>Website · FAQ · Blog</strong></div>
+          <div class="scene-source source-earned">Earned<strong>News · Review · PR</strong></div>
+          <div class="scene-source source-social">Social<strong>YouTube · Instagram · Threads</strong></div>
+          <div class="scene-source source-community">Community<strong>Reddit · Quora · Wiki</strong></div>
+
+          <div class="scene-panel scene-core">
+            <span class="scene-label">AI Answer Inclusion</span>
+            <strong><span id="prob-value">0.0</span><span class="pct">%</span></strong>
+            <p>Recommendations are shaped less by one page and more by trust signals across many channels.</p>
           </div>
-          <div class="platform-row" data-rank="78" data-answer="GRWM · 3-second visual hook — strong FYP entry"><span class="platform-name">TikTok</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="61" data-answer="Review tutorials — watch-time weight ↑"><span class="platform-name">YouTube</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="56" data-answer="Reels · carousels — texture close-ups recommended"><span class="platform-name">Instagram</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="42" data-answer="Ingredient debates — influencer mentions surface"><span class="platform-name">X</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-          <div class="platform-row" data-rank="33" data-answer="Ingredient/review threads — extend hashtag coverage"><span class="platform-name">Threads</span><span class="platform-rank pending">—</span><span class="platform-answer"></span></div>
-        </div>
 
-        <div class="aside-foot">
-          <span>Avg. exposure probability (7+5)</span>
-          <strong><span id="prob-value">0.0</span><span class="pct">%</span></strong>
+          <div class="scene-signal-stack" aria-label="Source signal analysis">
+            <div class="scene-signal" data-rank="82" data-answer="Official FAQs and comparison content become the base evidence for answers.">
+              <span>Owned Signal</span>
+              <strong>FAQ · Comparison · llms.txt</strong>
+              <em class="scene-signal-score">—</em>
+              <em class="scene-signal-copy"></em>
+            </div>
+            <div class="scene-signal" data-rank="76" data-answer="Reviews and press coverage strengthen candidate trust.">
+              <span>Earned Signal</span>
+              <strong>Review · PR · Publisher</strong>
+              <em class="scene-signal-score">—</em>
+              <em class="scene-signal-copy"></em>
+            </div>
+            <div class="scene-signal" data-rank="68" data-answer="Real community questions and objections fill in the answer context.">
+              <span>Community Signal</span>
+              <strong>Reddit · Quora · Wiki</strong>
+              <em class="scene-signal-score">—</em>
+              <em class="scene-signal-copy"></em>
+            </div>
+            <div class="scene-signal" data-rank="61" data-answer="Video and social content add recency, usage context, and distribution signals.">
+              <span>Social Signal</span>
+              <strong>YouTube · Instagram · Threads</strong>
+              <em class="scene-signal-score">—</em>
+              <em class="scene-signal-copy"></em>
+            </div>
+          </div>
         </div>
       </aside>
     </div>
@@ -1014,31 +1562,107 @@ body::before {
 
 <!-- ===== PORTFOLIO MARQUEE ===== -->
 <section class="pl-portfolio" aria-label="Portfolio">
-  <div class="pl-portfolio-eyebrow">PORTFOLIO · Key clients and partners — 15+ projects / 3 countries</div>
+  <div class="pl-portfolio-eyebrow">PORTFOLIO · Clients and partners — 15+ projects / 3 global markets</div>
   <div class="pl-portfolio-marquee">
     <div class="pl-portfolio-track">
         <span class="pl-chip"><span class="pl-chip-name">Ascent Korea</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Enterprise Data Marketing</span></span>
-        <span class="pl-chip"><span class="pl-chip-name">Samsung Affiliate</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">AI Search Validation</span></span>
-        <span class="pl-chip"><span class="pl-chip-name">3 Gangnam Clinics</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Dermatology · Clinic</span></span>
+        <span class="pl-chip"><span class="pl-chip-name">Samsung affiliate</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">AI Search Validation</span></span>
+        <span class="pl-chip"><span class="pl-chip-name">3 Gangnam clinics</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Dermatology · Clinic</span></span>
         <span class="pl-chip"><span class="pl-chip-name">All That Honors Club</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Inbound Travel</span></span>
         <span class="pl-chip"><span class="pl-chip-name">ourconsulting</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Agency Reseller</span></span>
         <span class="pl-chip"><span class="pl-chip-name">Hansol MS</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">EV Charging</span></span>
         <span class="pl-chip"><span class="pl-chip-name">Tokuyama Shoji</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Japan FMCG</span></span>
         <span class="pl-chip"><span class="pl-chip-name">Kozy.care</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">France Wellness</span></span>
         <span class="pl-chip"><span class="pl-chip-name">BridgeLeaf</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">US GTM Partner</span></span>
-        <span class="pl-chip"><span class="pl-chip-name">Top Korean Ad Agencies</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Negotiating</span></span>
-        <span class="pl-chip"><span class="pl-chip-name">Local SME PoCs</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Multi Industry</span></span>
+        <span class="pl-chip"><span class="pl-chip-name">Top Korean ad agency</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Negotiating</span></span>
+        <span class="pl-chip"><span class="pl-chip-name">Korean local SME PoC</span><span class="pl-chip-sep" aria-hidden="true"></span><span class="pl-chip-sub">Multi Industry</span></span>
         <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Ascent Korea</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Enterprise Data Marketing</span></span>
-        <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Samsung Affiliate</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">AI Search Validation</span></span>
-        <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">3 Gangnam Clinics</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Dermatology · Clinic</span></span>
+        <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Samsung affiliate</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">AI Search Validation</span></span>
+        <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">3 Gangnam clinics</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Dermatology · Clinic</span></span>
         <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">All That Honors Club</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Inbound Travel</span></span>
         <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">ourconsulting</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Agency Reseller</span></span>
         <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Hansol MS</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">EV Charging</span></span>
         <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Tokuyama Shoji</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Japan FMCG</span></span>
         <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Kozy.care</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">France Wellness</span></span>
         <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">BridgeLeaf</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">US GTM Partner</span></span>
-        <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Top Korean Ad Agencies</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Negotiating</span></span>
-        <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Local SME PoCs</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Multi Industry</span></span>
+        <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Top Korean ad agency</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Negotiating</span></span>
+        <span class="pl-chip" aria-hidden="true"><span class="pl-chip-name">Korean local SME PoC</span><span class="pl-chip-sep"></span><span class="pl-chip-sub">Multi Industry</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUESTION MARKET ===== -->
+<section class="section" id="market">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Question-led Discovery</div>
+        <h2>
+          <span class="line">Users now</span>
+          <span class="line"><em>compare brands with a single question</em>.</span>
+        </h2>
+      </div>
+      <p class="section-lede">
+        Questions like these used to lead people to compare links on a search results page.
+        Now the candidates and the reasons are summarized inside the answer.
+        Being included in that answer becomes the <strong>starting point</strong>for the next prediction model.
+      </p>
+    </div>
+
+    <div class="question-grid">
+      <div class="question-panel question-panel-feature reveal">
+        <div class="question-list">
+          <div class="question-card">
+            <div class="question-tag">Beauty · Global</div>
+            <p>"Recommend Korean skincare brands for sensitive skin."</p>
+          </div>
+          <div class="question-card">
+            <div class="question-tag">SaaS · B2B</div>
+            <p>"Which marketing automation tools fit a startup entering Japan?"</p>
+          </div>
+          <div class="question-card">
+            <div class="question-tag">Healthcare · Local</div>
+            <p>"Which dermatology clinics in Seoul can foreign visitors trust?"</p>
+          </div>
+          <div class="question-card">
+            <div class="question-tag">Commerce · Comparison</div>
+            <p>"Compare premium coffee brands with strong value for money."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-panel reveal reveal-d1">
+        <div class="answer-path">
+          <div class="answer-step">
+            <span class="answer-step-num">01</span>
+            <div>
+              <h3>Question</h3>
+              <p>Users ask in full-context questions that mix situation, goal, budget, country, and comparison criteria.</p>
+            </div>
+          </div>
+          <div class="answer-step">
+            <span class="answer-step-num">02</span>
+            <div>
+              <h3>Signals</h3>
+              <p>News, videos, reviews, communities, social posts, and wiki-style sources matter alongside the official site.</p>
+            </div>
+          </div>
+          <div class="answer-step">
+            <span class="answer-step-num">03</span>
+            <div>
+              <h3>Answer</h3>
+              <p>Multiple signals are summarized into one answer, where brands are compared or left out.</p>
+            </div>
+          </div>
+          <div class="answer-step">
+            <span class="answer-step-num">04</span>
+            <div>
+              <h3>Recommendation</h3>
+              <p>Recommended brands move into the next click, comparison, inquiry, or purchase shortlist.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1048,41 +1672,73 @@ body::before {
   <div class="container">
     <div class="mission-grid">
       <div class="reveal">
-        <div class="eyebrow">Who We Are</div>
-        <h2>The world's first<br><em>GEO-optimization</em> AI model company.</h2>
+        <div class="eyebrow">Category · AI Discovery AdTech</div>
+        <h2>
+          <span class="line">Build the evidence</span>
+          <span class="line"><em>AI answers need</em> to include your brand.</span>
+        </h2>
       </div>
       <div class="mission-body reveal reveal-d1">
         <p>
-          <strong>GEO (Generative Engine Optimization)</strong> is SEO for the age of AI search.
-          Where SEO measured "the probability your page lands on the first results page,"
-          GEO measures <strong>"the probability your content gets cited in answers from ChatGPT, Claude, Perplexity, and Gemini."</strong>
+          <strong>AI Discovery AdTech</strong> is marketing infrastructure for managing how a brand appears in AI answers,
+          which sources support citations, and how that data turns into content execution.
+          If search ads operated clicks in search results, Plurank operates
+          <strong>the trust signals and channel content needed before the answer is generated.</strong>
         </p>
         <p>
-          Each week, Plurank captures <strong>30M+ publish-to-citation data points</strong> across 7 AI platforms in 12 countries
-          to train our in-house citation-prediction model, <strong>Pluora</strong>.
-          Pluora outputs <strong>your citation probability as a score, before you publish</strong> —
-          we're building the Surfer SEO for the AI search era.
+          Globally, AI visibility, citation tracking, content activation, and AI advertising are converging into one execution market.
+          Plurank goes further by connecting <strong>local source analysis across Korea, Japan, the United States, and beyond with actual content creation and distribution</strong>.
+          It is not just a reporting tool; it is operating AdTech that builds brand evidence inside the sources AI answers are likely to use.
         </p>
+        <div class="position-ladder" aria-label="AI Discovery AdTech category ladder">
+          <div class="position-step">
+            <span>01 · SEO</span>
+            <strong>Rank Links</strong>
+            <p>Traditional search optimization that improves webpage rankings in search results.</p>
+          </div>
+          <div class="position-step">
+            <span>02 · AEO/GEO</span>
+            <strong>Track Answers</strong>
+            <p>Tracks brand mentions, position, and cited sources inside AI answers.</p>
+          </div>
+          <div class="position-step">
+            <span>03 · Source Activation</span>
+            <strong>Shape Signals</strong>
+            <p>Places the right content across websites, reviews, PR, communities, social, and wiki-style sources.</p>
+          </div>
+          <div class="position-step position-step-feature">
+            <span>04 · Plurank</span>
+            <strong>AI Discovery AdTech</strong>
+            <p>Connects answer data, content execution, and Pluora learning into one operating loop.</p>
+          </div>
+        </div>
         <div class="mission-pillars">
           <div class="mission-pillar">
             <div class="mission-pillar-num">01</div>
             <div class="mission-pillar-body">
-              <h4><em>Measure</em></h4>
-              <p>Citation tracking across 7 AI × 12 countries</p>
+              <h4>Observe <em>Observe</em></h4>
+              <p>Track questions, answers, citations, competitors, and country-level AI visibility</p>
             </div>
           </div>
           <div class="mission-pillar">
             <div class="mission-pillar-num">02</div>
             <div class="mission-pillar-body">
-              <h4><em>Learn</em></h4>
-              <p>30M+ publish-to-citation dataset</p>
+              <h4>Align <em>Align</em></h4>
+              <p>Design message consistency across owned, earned, social, and community signals</p>
             </div>
           </div>
           <div class="mission-pillar">
             <div class="mission-pillar-num">03</div>
             <div class="mission-pillar-body">
-              <h4><em>Predict</em></h4>
-              <p>Per-content citation probability output</p>
+              <h4>Activate <em>Activate</em></h4>
+              <p>Create and distribute SEO, PR, video, social, community, and review content based on data</p>
+            </div>
+          </div>
+          <div class="mission-pillar">
+            <div class="mission-pillar-num">04</div>
+            <div class="mission-pillar-body">
+              <h4>Learn <em>Learn</em></h4>
+              <p>Feed execution results and AI answer changes back into the Pluora prediction model</p>
             </div>
           </div>
         </div>
@@ -1091,36 +1747,47 @@ body::before {
   </div>
 </section>
 
-<!-- ===== FAN-OUT · 12+ Channel Dispersion ===== -->
+<!-- ===== SOURCE SIGNAL MAP ===== -->
 <section class="section" id="fan-out">
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <div class="eyebrow">Why tracking has become harder</div>
-        <h2>Once <em>a single search rank</em> — now <em>12+ channels</em> answer at once.</h2>
+        <div class="eyebrow">How AI Answers</div>
+        <h2>
+          <span class="line">AI answers do not come from one page.</span>
+          <span class="line"><em>Signals from many sources</em>shape the response together.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        A single user query now triggers ChatGPT answers, TikTok recommendations, Reddit threads, and media citations simultaneously.
-        Without tracking all of these together — <strong>half of your marketing decisions become invisible.</strong>
+        The same question can produce a different answer depending on which sources are reflected.
+        Plurank tracks websites, news, social, community, and local sources together,
+        then identifies what content each channel needs <strong>as execution tasks</strong> .
       </p>
     </div>
 
-    <div class="fanout-grid">
-      <div class="fanout-card reveal">
-        <div class="fanout-head"><span class="fanout-label">AI Search</span><span class="fanout-count">7</span></div>
-        <p>ChatGPT · Claude · Perplexity · Gemini · AI Overview · AI Mode · DeepSeek</p>
+    <div class="source-map reveal">
+      <div class="source-column">
+        <h3>Question</h3>
+        <p>A user question carries more situation and intent than a product name. The first step is reading the structure of the question.</p>
+        <div class="source-tags">
+          <span>Intent</span><span>Persona</span><span>Country</span><span>Funnel</span>
+        </div>
       </div>
-      <div class="fanout-card reveal reveal-d1">
-        <div class="fanout-head"><span class="fanout-label">Social</span><span class="fanout-count">5</span></div>
-        <p>TikTok · YouTube · Instagram · X · Threads</p>
+      <div class="source-arrow">→</div>
+      <div class="source-column source-column-feature">
+        <h3>Source Signals</h3>
+        <p>Signals that shape answers also live outside owned content. Plurank identifies which sources and priorities a brand should manage.</p>
+        <div class="source-tags">
+          <span>Owned</span><span>Earned</span><span>Social</span><span>Community</span><span>Local</span>
+        </div>
       </div>
-      <div class="fanout-card reveal reveal-d2">
-        <div class="fanout-head"><span class="fanout-label">Community</span><span class="fanout-count">5+</span></div>
-        <p>Reddit · Hacker News · Quora · G2 · Trustpilot</p>
-      </div>
-      <div class="fanout-card reveal reveal-d3">
-        <div class="fanout-head"><span class="fanout-label">Media</span><span class="fanout-count">80+</span></div>
-        <p>Allure · TechCrunch · Mashable · global outlets across 80+ titles</p>
+      <div class="source-arrow">→</div>
+      <div class="source-column">
+        <h3>AI Answer</h3>
+        <p>When enough evidence accumulates, the brand can appear in the answer body, comparison tables, recommendation lists, and cited sources.</p>
+        <div class="source-tags">
+          <span>Mention</span><span>Citation</span><span>Position</span><span>Recommendation</span>
+        </div>
       </div>
     </div>
   </div>
@@ -1132,58 +1799,62 @@ body::before {
     <div class="section-head reveal">
       <div>
         <div class="eyebrow">Why This Matters</div>
-        <h2>The decision-maker in marketing has <em>changed</em>.</h2>
+        <h2>
+          <span class="line">Search rank alone cannot <em>explain discovery</em> <em>anymore</em>.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        The era of human curation is over. AI algorithms now decide every exposure —
-        and marketing only works when you can <strong>predict</strong> them.
+        Brands no longer compete only for link rankings in search results.
+        AI answers, recommendation feeds, community citations, and agentic commerce
+        have expanded the user discovery path.
+        This full path becomes the next <strong>performance channel</strong>for the next prediction model.
       </p>
     </div>
 
     <div class="thesis-kpis">
       <div class="thesis-kpi reveal">
         <div class="thesis-kpi-value">70<span class="pct">%</span></div>
-        <div class="thesis-kpi-label">of YouTube watch-time is decided by <strong style="color:var(--text);font-weight:500">AI recommendations</strong></div>
+        <div class="thesis-kpi-label">Recommendation algorithms drive a large share of <strong style="color:var(--text);font-weight:500">watch time</strong>on YouTube</div>
         <div class="thesis-kpi-source">YouTube CPO</div>
       </div>
       <div class="thesis-kpi reveal">
         <div class="thesis-kpi-value">90<span class="pct">%+</span></div>
-        <div class="thesis-kpi-label">of TikTok FYP reach is non-followers — <strong style="color:var(--text);font-weight:500">the algorithm</strong></div>
+        <div class="thesis-kpi-label">TikTok FYP reach, non-follower <strong style="color:var(--text);font-weight:500">algorithmic distribution</strong></div>
         <div class="thesis-kpi-source">Sotrender</div>
       </div>
       <div class="thesis-kpi thesis-kpi-feature reveal">
         <div class="thesis-kpi-value"><em>−58</em><span class="pct">%</span></div>
-        <div class="thesis-kpi-label"><strong style="color:var(--text);font-weight:500">Organic CTR drop</strong> after Google AI Overviews launched</div>
+        <div class="thesis-kpi-label">Organic CTR decline after <strong style="color:var(--text);font-weight:500">Organic CTR</strong> AI Overview exposure</div>
         <div class="thesis-kpi-source">Ahrefs · 2025</div>
       </div>
       <div class="thesis-kpi reveal">
-        <div class="thesis-kpi-value">900<span class="pct">M</span></div>
-        <div class="thesis-kpi-label">weekly active ChatGPT users — <strong style="color:var(--text);font-weight:500">replacing search</strong></div>
+        <div class="thesis-kpi-value">9<span class="pct">00M</span></div>
+        <div class="thesis-kpi-label">ChatGPT weekly active users, <strong style="color:var(--text);font-weight:500">search substitution</strong></div>
         <div class="thesis-kpi-source">OpenAI · 2026.02</div>
       </div>
       <div class="thesis-kpi reveal">
         <div class="thesis-kpi-value">65<span class="pct">%</span></div>
-        <div class="thesis-kpi-label">of CMOs say AI is <strong style="color:var(--text);font-weight:500">fundamentally changing</strong> their role</div>
+        <div class="thesis-kpi-label">CMOs expecting <strong style="color:var(--text);font-weight:500">AI-driven role change</strong></div>
         <div class="thesis-kpi-source">Gartner · 2025</div>
       </div>
     </div>
 
     <div class="thesis-timeline reveal">
-      <div class="thesis-timeline-title">AI gatekeepers stack up at every stage</div>
+      <div class="thesis-timeline-title">AI gatekeepers accumulate at every stage</div>
       <div class="thesis-timeline-track">
         <div class="thesis-stage">
           <span class="thesis-stage-year">2010</span>
-          <span class="thesis-stage-label">SEO <em style="font-style: normal;color:var(--text-mute)">search algorithms</em></span>
+          <span class="thesis-stage-label">SEO <em style="font-style: normal;color:var(--text-mute)">search algorithm</em></span>
         </div>
         <div class="thesis-arrow">→</div>
         <div class="thesis-stage">
           <span class="thesis-stage-year">2015</span>
-          <span class="thesis-stage-label">Social Algo <em style="font-style: normal;color:var(--text-mute)">recommendation feeds</em></span>
+          <span class="thesis-stage-label">Social Algo <em style="font-style: normal;color:var(--text-mute)">recommendation feed</em></span>
         </div>
         <div class="thesis-arrow">→</div>
         <div class="thesis-stage">
           <span class="thesis-stage-year">2023</span>
-          <span class="thesis-stage-label">LLM Search <em style="font-style: normal;color:var(--text-mute)">AI answers</em></span>
+          <span class="thesis-stage-label">LLM Search <em style="font-style: normal;color:var(--text-mute)">AI Answer</em></span>
         </div>
         <div class="thesis-arrow">→</div>
         <div class="thesis-stage thesis-stage-now">
@@ -1196,10 +1867,10 @@ body::before {
     <div class="thesis-hypothesis reveal">
       <div class="thesis-hypothesis-tag">Our Hypothesis</div>
       <div class="thesis-hypothesis-body">
-        AI search + social + the coming Agentic Commerce — a single model that unifies prediction across every
-        <strong>AI-mediated channel of exposure, citation, and recommendation</strong> will become the standard
-        marketing infrastructure. That's why <strong>Pluora</strong> is built on
-        <strong>multi-signal integrated learning</strong>, not on any single channel.
+        A data model that connects AI search, social recommendations, community signals, and agentic commerce
+        to predict <strong>exposure, citation, and recommendation probability</strong>
+        will become marketing infrastructure. Plurank productizes this category as
+        <strong>AI Discovery AdTech</strong>.
       </div>
     </div>
   </div>
@@ -1210,22 +1881,49 @@ body::before {
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <div class="eyebrow">Build vs Plurank · Cost & Time</div>
-        <h2>Build it yourself in <em>a year</em>, or use Plurank <em>next week</em>.</h2>
+        <div class="eyebrow">Build vs Plurank · Cost and Time</div>
+        <h2>
+          <span class="line">Build it yourself: <em>1 year</em>,</span>
+          <span class="line">with Plurank: <em>next week</em>.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        Tracking 12 countries × 12 channels in-house requires worker infrastructure, ISP IPs in 12 countries, 248-feature normalization, and a retraining pipeline.
-        An ML team needs 6–12 months full-time — <strong>Plurank replaces all of it with a subscription.</strong>
+        Running 12 countries and 12 channels in-house requires worker infrastructure, 12-country ISP access, 248-feature normalization, and retraining pipelines.
+        Plurank replaces infrastructure that would otherwise take an ML team 6 to 12 months to build. <strong>Plurank replaces it with a subscription service.</strong>
       </p>
     </div>
 
     <div class="compare-table reveal">
-      <div class="compare-row compare-head"><div></div><div>Build in-house</div><div class="compare-us">Plurank</div></div>
-      <div class="compare-row"><div>Setup time</div><div>6–12 months</div><div class="compare-us"><strong>Next week</strong></div></div>
-      <div class="compare-row"><div>Annual cost</div><div>$250K–$400K</div><div class="compare-us">Subscription (per keyword)</div></div>
-      <div class="compare-row"><div>Headcount</div><div>2–3 (incl. ML engineer)</div><div class="compare-us"><strong>0</strong></div></div>
-      <div class="compare-row"><div>12-country ISP IP infra</div><div>Custom build</div><div class="compare-us">Included</div></div>
-      <div class="compare-row"><div>Weekly auto-update / retraining</div><div>Custom pipeline</div><div class="compare-us">Included</div></div>
+      <div class="compare-row compare-head">
+        <div></div>
+        <div>Build In-House</div>
+        <div class="compare-us">Plurank</div>
+      </div>
+      <div class="compare-row">
+        <div>Setup Time</div>
+        <div>6-12 months</div>
+        <div class="compare-us">from <strong>next week</strong></div>
+      </div>
+      <div class="compare-row">
+        <div>Annual Cost</div>
+        <div>KRW 300M-500M</div>
+        <div class="compare-us">Subscription fee (by keyword)</div>
+      </div>
+      <div class="compare-row">
+        <div>Dedicated Staff</div>
+        <div>2-3 people including ML engineers</div>
+        <div class="compare-us"><strong>0 people</strong></div>
+      </div>
+      <div class="compare-row">
+        <div>12-country ISP IP infrastructure</div>
+        <div>Separate build</div>
+        <div class="compare-us">Included by default</div>
+      </div>
+      <div class="compare-row">
+        <div>Weekly auto-refresh and retraining</div>
+        <div>Separate pipeline</div>
+        <div class="compare-us">Included by default</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1235,12 +1933,16 @@ body::before {
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <div class="eyebrow">5 Lens · What we surface</div>
-        <h2>See <em>where and how</em> your brand appears<br>through five lenses.</h2>
+        <div class="eyebrow">5 Lens · Questions Plurank Answers</div>
+        <h2>
+          <span class="line">Inside AI answers,</span>
+          <span class="line">watch these <em>5 signals</em>.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        We pull together signals scattered across search, social, communities, and media — into five analytical lenses.
-        <strong>What's working now</strong> and <strong>what to improve to lift your score</strong>, both backed by data.
+        We do not just count whether a brand appears.
+        We show how the brand is treated across questions, sources, countries, and platforms,
+        then identify what needs to be strengthened.
       </p>
     </div>
 
@@ -1248,32 +1950,139 @@ body::before {
       <div class="lens-card reveal">
         <div class="lens-num">01</div>
         <h3>CitationLens</h3>
-        <div class="lens-tag">Inside 7 AI answers</div>
-        <p>Where your brand is cited and at what rank — captured weekly.</p>
+        <div class="lens-tag">Where and in what context is the brand mentioned?</div>
+        <p>Every week, check the context, position, and sources where the brand appears across 7 AI answer surfaces.</p>
       </div>
       <div class="lens-card lens-feature reveal reveal-d1">
         <div class="lens-num">02</div>
         <h3>PlatformLens<span class="lens-badge">Only Plurank</span></h3>
-        <div class="lens-tag">The channel where traffic concentrates</div>
-        <p>Whether ChatGPT cites you better or TikTok delivers more reach — we tell you which channel to invest in.</p>
+        <div class="lens-tag">Which platforms discover the brand?</div>
+        <p>See whether ChatGPT, Gemini, Perplexity, YouTube, Instagram, or Reddit has the greatest impact on brand discovery.</p>
       </div>
       <div class="lens-card lens-feature reveal reveal-d2">
         <div class="lens-num">03</div>
         <h3>GeoLens<span class="lens-badge">Only Plurank</span></h3>
-        <div class="lens-tag">Country-level gaps across 12 markets</div>
-        <p>Why you're visible in Korea but missing in Japan, where competitors are ahead in the US — at a glance.</p>
+        <div class="lens-tag">Why do answers differ by country?</div>
+        <p>Compare why a brand appears in Korea but disappears in Japan, or why a competitor leads in the United States.</p>
       </div>
       <div class="lens-card reveal reveal-d3">
         <div class="lens-num">04</div>
         <h3>SourceLens</h3>
-        <div class="lens-tag">Cited media & communities</div>
-        <p>Reddit · Hacker News · Allure — knowing which sources AI pulls from sets your PR and contribution priorities.</p>
+        <div class="lens-tag">Which sources become the evidence for answers?</div>
+        <p>Prioritize sources frequently used in answers, including news, Reddit, Quora, G2, reviews, and wiki-style content.</p>
       </div>
       <div class="lens-card reveal reveal-d4">
         <div class="lens-num">05</div>
         <h3>BoostLens</h3>
-        <div class="lens-tag">"+N pt if you fix this"</div>
-        <p>Drop a draft URL and we simulate exactly which parts (schema · sources · structure) to strengthen and how much your score lifts.</p>
+        <div class="lens-tag">What should be strengthened to change the brand position?</div>
+        <p>Before publishing, simulate how comparison tables, FAQs, sources, and structure improvements could lift the GEO Score.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INSIGHT TO ACTION LOOP ===== -->
+<section class="section" id="action-loop">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">From Insight To Action</div>
+        <h2>
+          <span class="line">Analysis leads to</span>
+          <span class="line"><em>the next action</em>.</span>
+        </h2>
+      </div>
+      <p class="section-lede">
+        Plurank is not just a monitoring dashboard.
+        It shows what content to create, where to publish it, and which sources to secure
+        to improve brand position <strong>execution priorities and production briefs</strong>.
+      </p>
+    </div>
+
+    <div class="loop-grid">
+      <div class="loop-card reveal">
+        <div class="loop-num">01</div>
+        <h3>Question Mapping</h3>
+        <p>Find the core questions customers actually ask across the buying journey.</p>
+      </div>
+      <div class="loop-card reveal reveal-d1">
+        <div class="loop-num">02</div>
+        <h3>Source Intelligence</h3>
+        <p>Analyze news, communities, videos, reviews, and local sources frequently used in answers.</p>
+      </div>
+      <div class="loop-card loop-card-feature reveal reveal-d2">
+        <div class="loop-num">03</div>
+        <h3>GEO Activation</h3>
+        <p>Create channel-specific content across SEO articles, comparison pages, FAQs, PR, social posts, and community answers.</p>
+      </div>
+      <div class="loop-card reveal reveal-d3">
+        <div class="loop-num">04</div>
+        <h3>Performance Check</h3>
+        <p>After execution, measure changes in answer mentions, citation rate, position, and share versus competitors.</p>
+      </div>
+      <div class="loop-card reveal reveal-d4">
+        <div class="loop-num">05</div>
+        <h3>Pluora Learning</h3>
+        <p>Learn from execution results to predict the citation potential of the next content.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHANNEL CONTENT ACTIVATION ===== -->
+<section class="section" id="channel-activation">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Channel Content Activation</div>
+        <h2>
+          <span class="line">Every channel needs</span>
+          <span class="line"><em>different content</em>.</span>
+        </h2>
+      </div>
+      <p class="section-lede">
+        Plurank does not stop at a GEO score.
+        Using question and source data, it designs and produces the content each channel needs across websites, social, video, communities, and PR.
+        We are <strong>AI AdTech that includes content execution</strong>.
+      </p>
+    </div>
+
+    <div class="channel-grid">
+      <div class="channel-card reveal">
+        <h3>Owned Media</h3>
+        <p>Owned channels become the factual reference point. We structure comparison tables, FAQs, product evidence, and schema so answers can cite them more easily.</p>
+        <div class="channel-list">
+          <span>SEO/GEO Article</span>
+          <span>FAQ · Comparison Page</span>
+          <span>Schema · llms.txt</span>
+        </div>
+      </div>
+      <div class="channel-card channel-card-feature reveal reveal-d1">
+        <h3>Social & Video</h3>
+        <p>Video and social channels show recency, usage scenes, and the language people use. We design hooks and scripts for YouTube, Shorts, Reels, and Threads with data.</p>
+        <div class="channel-list">
+          <span>YouTube Script</span>
+          <span>Shorts · Reels Hook</span>
+          <span>Threads · X Post Set</span>
+        </div>
+      </div>
+      <div class="channel-card reveal reveal-d2">
+        <h3>Community</h3>
+        <p>Reddit, Quora, forums, and wiki-style documents accumulate user-side evidence. We organize objections, comparisons, and real usage context without exaggeration.</p>
+        <div class="channel-list">
+          <span>Reddit · Quora Answer</span>
+          <span>Forum Seeding Guide</span>
+          <span>Wiki-style Source Draft</span>
+        </div>
+      </div>
+      <div class="channel-card reveal reveal-d3">
+        <h3>Earned & Local</h3>
+        <p>Press, reviews, list publishers, and local platforms are external trust signals. We design the required sources and messages separately for each country.</p>
+        <div class="channel-list">
+          <span>PR Angle · Review Brief</span>
+          <span>Publisher Outreach Map</span>
+          <span>Local Source Package</span>
+        </div>
       </div>
     </div>
   </div>
@@ -1285,11 +2094,14 @@ body::before {
     <div class="section-head reveal">
       <div>
         <div class="eyebrow">Meet Pluora</div>
-        <h2>An AI model that <em>predicts</em> citation probability.</h2>
+        <h2>
+          <span class="line">Pluora predicts</span>
+          <span class="line"><em>citation probability</em>before publishing.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        Trained on 192 verified publish-to-citation cases, <strong>Pluora</strong> takes a single URL
-        and outputs the citation probability (GEO Score) across all 7 AI platforms.
+        Pluora learns from AI answers, cited sources, content structure, and platform-level exposure results.
+        Instead of waiting after content is published, check <strong>the GEO Score and improvement direction</strong>before publishing.
       </p>
     </div>
 
@@ -1297,7 +2109,7 @@ body::before {
       <div class="card reveal">
         <div class="card-header">
           <span class="card-label">Citation Probability</span>
-          <span class="card-tag">Per-content score</span>
+          <span class="card-tag">Content citation probability</span>
         </div>
         <div class="gauge-wrap" data-gauge-target="78.2">
           <svg class="gauge" viewBox="0 0 200 140" preserveAspectRatio="xMidYMid meet">
@@ -1305,10 +2117,10 @@ body::before {
             <path class="gauge-arc-anim" d="M 20 110 A 80 80 0 0 1 180 110" stroke="#f5f5f5" stroke-width="10" fill="none" stroke-linecap="round" pathLength="100"/>
             <text x="100" y="96" text-anchor="middle" fill="#f5f5f5" class="gauge-num-text gauge-text-anim" font-size="42" font-weight="300">0.0<tspan fill="rgba(255,255,255,0.46)" font-size="22" dx="2">%</tspan></text>
           </svg>
-          <div class="gauge-trend">Citation probability within 7 days of publishing</div>
+          <div class="gauge-trend">Citation probability within 7 days after publishing</div>
         </div>
         <div class="sparkline-wrap">
-          <span class="sparkline-label">Recent content trend</span>
+          <span class="sparkline-label">Recent published content trend</span>
           <svg class="sparkline" viewBox="0 0 200 50" preserveAspectRatio="none">
             <path d="M 0 35 L 50 30 L 100 28 L 150 18 L 200 8 L 200 50 L 0 50 Z" fill="rgba(255,255,255,0.04)"/>
             <path class="path-reveal" d="M 0 35 L 50 30 L 100 28 L 150 18 L 200 8" stroke="#f5f5f5" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
@@ -1345,11 +2157,11 @@ body::before {
           <text x="360" y="220" text-anchor="middle" fill="#f5f5f5" font-family="Geist Mono" font-size="9" letter-spacing="1.5">OUT</text>
         </svg>
         <div class="model-tagline">
-          <strong>Pluora</strong> — Plurank's in-house citation-prediction AI model. URL in → citation probability across 7 AI platforms out.
+          <strong>Pluora</strong> — Plurank's proprietary citation prediction AI model. Enter a URL and get citation probability across 7 AI platforms.
         </div>
         <div class="neural-meta">
-          <div><span>Forecast horizon</span><strong>7 days</strong></div>
-          <div><span>Retraining</span><strong>Weekly</strong></div>
+          <div><span>Prediction horizon</span><strong>7 days</strong></div>
+          <div><span>Learning cycle</span><strong>Weekly</strong></div>
           <div><span>MAPE</span><strong>8.6%</strong></div>
         </div>
       </div>
@@ -1360,10 +2172,10 @@ body::before {
           <span class="card-tag">12 countries · 7 platforms</span>
         </div>
         <div class="metrics-grid">
-          <div class="metric"><div class="metric-num" data-count="192">192</div><div class="metric-label">verified publish↔citation cases</div></div>
-          <div class="metric"><div class="metric-num" data-count="30">30<span class="unit">M+</span></div><div class="metric-label">BigQuery training rows</div></div>
-          <div class="metric"><div class="metric-num" data-count="12">12</div><div class="metric-label">countries (real ISP IPs)</div></div>
-          <div class="metric"><div class="metric-num" data-count="97.1" data-decimals="1">97.1</div><div class="metric-label">avg. GEO Score</div></div>
+          <div class="metric"><div class="metric-num" data-count="192">192</div><div class="metric-label">Publish-to-citation evidence</div></div>
+          <div class="metric"><div class="metric-num" data-count="30">30<span class="unit">M+</span></div><div class="metric-label">BigQuery training data</div></div>
+          <div class="metric"><div class="metric-num" data-count="12">12</div><div class="metric-label">Countries (real ISP IPs)</div></div>
+          <div class="metric"><div class="metric-num" data-count="97.1" data-decimals="1">97.1</div><div class="metric-label">Average GEO score</div></div>
         </div>
       </div>
     </div>
@@ -1376,11 +2188,14 @@ body::before {
     <div class="section-head reveal">
       <div>
         <div class="eyebrow">Why Plurank</div>
-        <h2>Why we can go all the way to <em>prediction</em>.</h2>
+        <h2>
+          <span class="line">AI answers change every time.</span>
+          <span class="line">Repeated measurement reveals <em>patterns</em>.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        Real browser data, ISP IPs in 12 countries, 30M+ training rows —
-        no one else in the world has all three.
+        Plurank repeatedly measures AI answers in real country environments, not API estimates.
+        So we look beyond one-off screenshots to <strong>the distribution and trend of brand discovery probability</strong>.
       </p>
     </div>
 
@@ -1388,20 +2203,20 @@ body::before {
       <div class="why-card reveal">
         <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
         <h3>Real <em>browser</em> data</h3>
-        <p>Not API estimates or scrapes. <strong>We capture exactly what real users see, on ISP IPs in 12 countries.</strong></p>
-        <div class="why-meta">Screenshot-verified · 192 cases</div>
+        <p>Not API estimates or scraping, but <strong>real user screens from 12-country ISP IPs</strong> captured directly.</p>
+        <div class="why-meta">Screenshot verification · 192 empirical cases</div>
       </div>
       <div class="why-card reveal">
         <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
         <h3>7 platforms × 12 countries</h3>
-        <p><strong>ChatGPT · Claude · Perplexity · Gemini · AI Overview · AI Mode · DeepSeek</strong> — measured concurrently across 5 worker sets and 60 EC2 instances.</p>
-        <div class="why-meta">Weekly cadence + daily trend pulse</div>
+        <p><strong>ChatGPT · Claude · Perplexity · Gemini · AI Overview · AI Mode · DeepSeek</strong> measured simultaneously with 5 worker sets and 60 EC2 instances.</p>
+        <div class="why-meta">Weekly regular run + daily trend</div>
       </div>
       <div class="why-card reveal">
         <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 12h6M15 12h6M12 3v6M12 15v6M5.6 5.6l4.2 4.2M14.2 14.2l4.2 4.2M5.6 18.4l4.2-4.2M14.2 9.8l4.2-4.2"/></svg></div>
         <h3>Pluora — <em>pre-publish</em> prediction</h3>
-        <p>Trained on 30M+ publish-to-citation rows, <strong>Pluora</strong> outputs your AI citation probability as a score, before publication.</p>
-        <div class="why-meta">Surfer SEO for AI search · MAPE 8.6%</div>
+        <p>Trained on 30M+ publish-to-citation data, <strong>Pluora</strong> scores AI citation potential before content is published.</p>
+        <div class="why-meta">The Surfer SEO for AI search · MAPE 8.6%</div>
       </div>
     </div>
   </div>
@@ -1413,37 +2228,40 @@ body::before {
     <div class="section-head reveal">
       <div>
         <div class="eyebrow">How It Works</div>
-        <h2>From data to <em>prediction</em> in 4 steps.</h2>
+        <h2>
+          <span class="line">From collection to prediction,</span>
+          <span class="line"><em>4 steps</em>.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        Every week, we automatically collect data, retrain the model, and forecast the following week's visibility.
+        Every week, data is collected automatically, trained into the model, and used to predict next-week visibility.
       </p>
     </div>
 
     <div class="engine-flow">
       <div class="engine-step reveal">
         <div class="engine-step-num">01 · Collect</div>
-        <h3>Real-browser capture</h3>
-        <p>Capture answers from all 7 AI platforms in real browsers, on ISP IPs across 12 countries. Automated weekly across 60 EC2 workers.</p>
-        <div class="engine-step-meta">Tuesdays 03:00 KST</div>
+        <h3>Real browser capture</h3>
+        <p>Capture answers from 7 AI platforms through real browsers on ISP IPs in 12 countries, automated weekly with 60 EC2 workers.</p>
+        <div class="engine-step-meta">Every Tuesday 03:00 KST</div>
       </div>
       <div class="engine-step reveal">
         <div class="engine-step-num">02 · Label</div>
         <h3>Screenshots + citation extraction</h3>
-        <p>Screenshots, source URLs, rank, text tokens — all loaded into BigQuery and normalized into 248 features.</p>
-        <div class="engine-step-meta">30M+ rows accumulated</div>
+        <p>Load screenshots, source URLs, rankings, and text tokens into BigQuery and normalize them into 248 features.</p>
+        <div class="engine-step-meta">30M+ accumulated training records</div>
       </div>
       <div class="engine-step reveal">
         <div class="engine-step-num">03 · Train</div>
         <h3><em>Pluora</em> retraining</h3>
-        <p>Pluora learns publish-to-citation patterns. Weights updated weekly, MAPE 8.6%.</p>
-        <div class="engine-step-meta">v1 launching · 2026 H2</div>
+        <p>Pluora learns publish-to-citation patterns and updates weights weekly. Current MAPE is 8.6%.</p>
+        <div class="engine-step-meta">v1 planned · H2 2026</div>
       </div>
       <div class="engine-step engine-step-last">
         <div class="engine-step-num">04 · Predict</div>
         <h3>Citation probability + guide</h3>
-        <p>Submit a URL — Pluora returns citation probability (GEO Score) for each of the 7 AIs. Low score? It pinpoints exactly which parts to improve and by how much.</p>
-        <div class="engine-step-meta">Real-time + Mondays 09:00 report</div>
+        <p>Enter a URL to get citation probability (GEO Score) by 7 AI platforms. If the score is low, Plurank suggests what to strengthen.</p>
+        <div class="engine-step-meta">Real-time + weekly Monday 09:00 report</div>
       </div>
     </div>
   </div>
@@ -1455,44 +2273,108 @@ body::before {
     <div class="section-head reveal">
       <div>
         <div class="eyebrow">Data Foundation</div>
-        <h2>The <em>training data</em> is the moat.</h2>
+        <h2>
+          <span class="line"><em>Training data</em></span>
+          <span class="line">is the Plurank standard.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        Every Tuesday at dawn, 60 EC2 workers in 12 countries capture all 7 AI platforms simultaneously and load to BigQuery.
-        That data becomes the <strong>fuel</strong> for the next model.
+        Every Tuesday morning, 60 worker EC2 instances across 12 countries capture 7 AI platforms simultaneously and load the data into BigQuery.
+        This data becomes the <strong>training foundation</strong> for the next prediction model.
       </p>
     </div>
 
     <div class="trust-grid">
       <div class="trust-card reveal">
         <div class="trust-num" data-count="192">192</div>
-        <div class="trust-label">Verified publish↔AI citations</div>
-        <div class="trust-desc">Traced cases — from 12 client blogs to AI search citations</div>
+        <div class="trust-label">Publish-to-AI citation evidence</div>
+        <div class="trust-desc">Cases tracking 12 company blogs through AI search citations</div>
       </div>
       <div class="trust-card trust-card-feature reveal reveal-d1">
         <div class="trust-num" data-count="30">30<span class="unit">M+</span></div>
-        <div class="trust-label">BigQuery training rows</div>
-        <div class="trust-desc">Screenshots · sources · rank · text tokens · metadata</div>
+        <div class="trust-label">BigQuery training data</div>
+        <div class="trust-desc">Screenshots · sources · rankings · text tokens · metadata</div>
       </div>
       <div class="trust-card reveal reveal-d2">
         <div class="trust-num" data-count="12">12</div>
-        <div class="trust-label">Countries (real IPs)</div>
+        <div class="trust-label">Countries (real IP)</div>
         <div class="trust-desc">US · UK · JP · KR · DE · FR · ES · IT · IN · BR · ID · AE</div>
       </div>
       <div class="trust-card reveal reveal-d3">
         <div class="trust-num" data-count="97.1" data-decimals="1">97.1</div>
-        <div class="trust-label">Avg. GEO Score</div>
-        <div class="trust-desc">192 published pieces across 12 categories</div>
+        <div class="trust-label">Average GEO score</div>
+        <div class="trust-desc">12 categories · 192 published pieces</div>
       </div>
     </div>
 
+    <!-- global partners -->
     <div class="partner-strip reveal">
       <div class="partner-label">Global · Partners we work with</div>
       <div class="partner-list">
-        <div class="partner-item"><span class="partner-flag">🇰🇷</span><div class="partner-info"><strong>15+ Korean Partners</strong><span>Ascent AI · Samsung affiliates · medical brands</span></div></div>
-        <div class="partner-item"><span class="partner-flag">🇯🇵</span><div class="partner-info"><strong>Tokuyama Trading</strong><span>Japan consumer-goods distribution</span></div></div>
-        <div class="partner-item"><span class="partner-flag">🇫🇷</span><div class="partner-info"><strong>Kozy.care</strong><span>European wellness market</span></div></div>
-        <div class="partner-item"><span class="partner-flag">🇺🇸</span><div class="partner-info"><strong>BridgeLeaf</strong><span>US GTM partner</span></div></div>
+        <div class="partner-item">
+          <span class="partner-flag">🇰🇷</span>
+          <div class="partner-info"><strong>15+ Korean partners</strong><span>Ascent AI · Samsung affiliate · clinics and more</span></div>
+        </div>
+        <div class="partner-item">
+          <span class="partner-flag">🇯🇵</span>
+          <div class="partner-info"><strong>Tokuyama Shoji</strong><span>Japan consumer goods distribution base</span></div>
+        </div>
+        <div class="partner-item">
+          <span class="partner-flag">🇫🇷</span>
+          <div class="partner-info"><strong>Kozy.care</strong><span>European wellness market</span></div>
+        </div>
+        <div class="partner-item">
+          <span class="partner-flag">🇺🇸</span>
+          <div class="partner-info"><strong>BridgeLeaf</strong><span>US GTM partner</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GLOBAL GEO ===== -->
+<section class="section" id="global">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Global GEO</div>
+        <h2>
+          <span class="line">AI search is global,</span>
+          <span class="line"><em>but the sources behind answers differ by country</em>.</span>
+        </h2>
+      </div>
+      <p class="section-lede">
+        The same question produces different answers across Korea, Japan, the United States, and Southeast Asia.
+        Plurank analyzes country-level AI answers, local media, communities, social, and review ecosystems to create
+        <strong>market-specific AI Discovery Maps</strong>.
+      </p>
+    </div>
+
+    <div class="usecase-grid">
+      <div class="usecase-card reveal">
+        <h3>Korea</h3>
+        <p>Analyze the connection between Naver, news, communities, wiki-style information, and global AI answers.</p>
+        <div class="usecase-tag">KR Source Map</div>
+      </div>
+      <div class="usecase-card reveal reveal-d1">
+        <h3>Japan</h3>
+        <p>Separate Japanese-language questions, local reviews, distribution partners, and media signals for GTM strategy.</p>
+        <div class="usecase-tag">Japan GTM</div>
+      </div>
+      <div class="usecase-card reveal reveal-d2">
+        <h3>United States</h3>
+        <p>Track open-web signals often used in answers, such as Reddit, Quora, G2, PR, and comparison content.</p>
+        <div class="usecase-tag">US Discovery</div>
+      </div>
+      <div class="usecase-card reveal reveal-d3">
+        <h3>Southeast Asia</h3>
+        <p>Measure how platform recommendations, creator content, and commerce reviews affect AI answers.</p>
+        <div class="usecase-tag">SEA Social</div>
+      </div>
+      <div class="usecase-card reveal reveal-d4">
+        <h3>Europe</h3>
+        <p>Build country-specific content structures based on language sources, regulatory sensitivity, and trust signal differences.</p>
+        <div class="usecase-tag">EU Localization</div>
       </div>
     </div>
   </div>
@@ -1504,49 +2386,53 @@ body::before {
     <div class="section-head reveal">
       <div>
         <div class="eyebrow">How We Think About GEO</div>
-        <h2><em>Six</em> truths we found in the data.</h2>
+        <h2>
+          <span class="line">6 shifts</span>
+          <span class="line"><em>confirmed by data</em> .</span>
+        </h2>
       </div>
       <p class="section-lede">
-        From watching 30M+ publish-to-citation data points each week — what you must know if you're serious about GEO.
+        These patterns repeat in the publish-to-citation data accumulated every week.
+        They are the first standards to check when starting GEO.
       </p>
     </div>
 
     <div class="insights-grid">
       <article class="insight-card reveal">
         <div class="insight-num">01</div>
-        <h3>AI doesn't search — it <em>writes the answer</em>.</h3>
-        <p>AI search no longer returns a list of results. It composes a single answer from multiple sources. So <strong>the cited sources are the visibility</strong>.</p>
-        <div class="insight-tag">→ Weekly tracking of which sources land in answers across 7 AI × 12 countries</div>
+        <h3>AI search shows answers <em>before link lists</em>.</h3>
+        <p>Users check candidates inside summarized answers instead of comparing many results manually. That makes <strong>cited sources the new visibility</strong>for the next prediction model.</p>
+        <div class="insight-tag">→ Track which sources appear across 7 AI platforms × 12 countries every week</div>
       </article>
       <article class="insight-card reveal">
         <div class="insight-num">02</div>
-        <h3>One mention vs. core evidence — a <em>5× gap</em>.</h3>
-        <p>The same line gains very different visibility depending on <strong>whether it's a footnote or the main argument</strong>. A passing mention isn't enough.</p>
+        <h3>A passing mention is different from <em>core evidence</em>.</h3>
+        <p>Even the same line means something different depending on whether it is <strong>only a footnote or part of the answer body</strong>. A simple mention is not enough.</p>
         <div class="insight-tag">→ GEO Score weights position, context, and accuracy</div>
       </article>
       <article class="insight-card reveal">
         <div class="insight-num">03</div>
-        <h3>People don't ask in <em>keywords</em>.</h3>
-        <p>SEO meant "Mercedes E-Class price." GEO means <strong>"a premium sedan that fits a family of four."</strong> A founder, PM, and designer ask about the same product in completely different ways.</p>
-        <div class="insight-tag">→ We learn citation patterns by persona clusters</div>
+        <h3>People ask by <em>situation</em>more than keywords.</h3>
+        <p>SEO looked at keywords like "Mercedes E-Class price." GEO looks at context-rich questions like <strong>"premium sedans for my family of four"</strong>.</p>
+        <div class="insight-tag">→ Learn citation patterns by persona cluster</div>
       </article>
       <article class="insight-card reveal">
         <div class="insight-num">04</div>
-        <h3>AI doesn't only read <em>your site</em>.</h3>
-        <p>AI doesn't form answers from your domain alone. <strong>Reviews, communities, and press citations</strong> all count toward the verdict.</p>
-        <div class="insight-tag">→ Weekly mention tracking across 80+ outlets + 5 major communities</div>
+        <h3>Signals outside the brand site <em>also matter</em>.</h3>
+        <p>Answers are not built from one domain alone. <strong>reviews, communities, and press citations</strong>must be managed together to build trust.</p>
+        <div class="insight-tag">→ Weekly tracking across 80+ media sources and 5 major communities</div>
       </article>
       <article class="insight-card reveal">
         <div class="insight-num">05</div>
-        <h3>Content AI <em>can pull from easily</em> looks different.</h3>
-        <p>Volume is irrelevant. What decides citation is <strong>format AI can lift directly</strong> — schema, FAQs, clean sources.</p>
-        <div class="insight-tag">→ Simulator outputs the exact +N pt gain for each upgrade</div>
+        <h3>Citation-friendly content has <em>structure</em>.</h3>
+        <p>What matters more than content volume is <strong>a format AI answers can use easily</strong>. Schema, FAQs, and clear sources raise citation potential.</p>
+        <div class="insight-tag">→ Simulate expected lift by improvement item</div>
       </article>
       <article class="insight-card insight-card-feature reveal">
         <div class="insight-num">06</div>
-        <h3>"Recommending" AI is over. <em>"Buying"</em> AI is next.</h3>
-        <p>Beyond recommendations, AI now <strong>compares and executes purchases directly</strong>. Exposure shifts from awareness to action.</p>
-        <div class="insight-tag">→ ChatGPT Operator · Perplexity Shopping already in our measurement scope</div>
+        <h3>After recommendation comes <em>purchase action</em>.</h3>
+        <p>When AI experiences connect comparison and checkout, exposure moves beyond awareness into action.</p>
+        <div class="insight-tag">→ Includes ChatGPT Operator and Perplexity Shopping measurement</div>
       </article>
     </div>
   </div>
@@ -1558,10 +2444,14 @@ body::before {
     <div class="section-head reveal">
       <div>
         <div class="eyebrow">What You Get · Every Monday</div>
-        <h2>What clients receive — <em>every Monday</em>.</h2>
+        <h2>
+          <span class="line">A weekly</span>
+          <span class="line"><em>execution package</em>.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        Not just measurement — prediction. Pre-publish citation probability + post-publish monitoring + next-action guide in one place.
+        Get pre-publish citation probability, post-publish monitoring, source analysis, and channel-specific content production guidance in one package.
+        As data accumulates every week, Pluora predictions and execution priorities become more precise.
       </p>
     </div>
 
@@ -1569,12 +2459,12 @@ body::before {
       <div class="deliverable-text">
         <div class="deliverable-num">01</div>
         <h3>Weekly visibility <em>report</em></h3>
-        <p>Your brand's <strong>citations, rank, and share of voice</strong> across 7 AI platforms × 12 countries — calculated automatically every week.
-        Five-competitor comparison is included by default, with category-level SOV summarized on a single screen.</p>
+        <p>Across 7 AI platforms × 12 countries, automatically calculate brand <strong>citations, position, and share of voice</strong>every week.
+        Five-competitor comparison is included by default, with category-level SOV in one view.</p>
         <ul class="deliverable-bullets">
-          <li>Avg. rank + citation count per platform</li>
+          <li>Average rank + citation count by platform</li>
           <li>Country-level share heatmap</li>
-          <li>SOV vs. 5 competitors</li>
+          <li>5-competitor SOV comparison</li>
         </ul>
       </div>
       <div class="deliverable-visual">
@@ -1592,7 +2482,7 @@ body::before {
             <div class="mock-platform"><div class="mock-plat-name"><span class="dot" style="background:#4285F4"></span>Gemini</div><div class="mock-plat-bar"><div class="bar-fill" style="width:54%"></div></div><div class="mock-plat-val">54% <small>· #6</small></div></div>
             <div class="mock-platform"><div class="mock-plat-name"><span class="dot" style="background:#FBBC04"></span>AI Overview</div><div class="mock-plat-bar"><div class="bar-fill" style="width:42%"></div></div><div class="mock-plat-val">42% <small>· #7</small></div></div>
           </div>
-          <div class="mock-foot"><span>Overall share of voice</span><strong>62.6%</strong></div>
+          <div class="mock-foot"><span>Overall average share</span><strong>62.6%</strong></div>
         </div>
       </div>
     </div>
@@ -1601,12 +2491,12 @@ body::before {
       <div class="deliverable-text">
         <div class="deliverable-num">02</div>
         <h3>Citation probability + <em>improvement simulator</em></h3>
-        <p>Drop a URL or draft and <strong>Pluora</strong> outputs the <strong>citation probability for each of 7 AI platforms</strong>.
-        If a score is low, the simulator tells you exactly which parts (schema, sources, structure) to strengthen — and how much each will lift the score.</p>
+        <p>Enter a planned content URL or draft and <strong>Pluora</strong> returns <strong>citation probability by 7 AI platforms</strong>.
+        If the score is low, the simulator shows which schema, source, and structure improvements can lift probability.</p>
         <ul class="deliverable-bullets">
-          <li>Citation probability per AI platform (0–100%)</li>
-          <li>"+N pt if you fix this" simulation</li>
-          <li>MAPE 8.6% (industry-standard accuracy metric)</li>
+          <li>Citation probability by 7 AI platforms (0-100%)</li>
+          <li>"What to fix for +N pt" improvement simulation</li>
+          <li>MAPE 8.6% (standard prediction accuracy metric)</li>
         </ul>
       </div>
       <div class="deliverable-visual">
@@ -1623,7 +2513,7 @@ body::before {
             <text x="22" y="94" text-anchor="end" fill="rgba(255,255,255,0.28)" font-size="9" font-family="Geist Mono">60</text>
             <text x="22" y="144" text-anchor="end" fill="rgba(255,255,255,0.28)" font-size="9" font-family="Geist Mono">30</text>
             <line x1="240" y1="20" x2="240" y2="155" stroke="rgba(245,158,11,0.4)" stroke-width="1" stroke-dasharray="3,3"/>
-            <text x="240" y="14" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="Geist Mono" font-weight="500">Current</text>
+            <text x="240" y="14" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="Geist Mono" font-weight="500">Current content</text>
             <polyline class="path-reveal" points="30,120 70,115 110,108 150,98 190,88 230,82" fill="none" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
             <polyline points="230,82 270,72 310,62 340,55" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5,3"/>
             <circle cx="30" cy="120" r="2.5" fill="#f5f5f5"/>
@@ -1635,13 +2525,13 @@ body::before {
             <circle cx="340" cy="55" r="5" fill="#f59e0b" stroke="#0a0a0a" stroke-width="2"/>
             <text x="340" y="42" text-anchor="end" fill="#f59e0b" font-size="11" font-family="Fraunces" font-weight="500">78.2</text>
             <text x="30" y="170" text-anchor="middle" fill="rgba(255,255,255,0.28)" font-size="9" font-family="Geist Mono">Initial</text>
-            <text x="110" y="170" text-anchor="middle" fill="rgba(255,255,255,0.28)" font-size="9" font-family="Geist Mono">+ Sources</text>
+            <text x="110" y="170" text-anchor="middle" fill="rgba(255,255,255,0.28)" font-size="9" font-family="Geist Mono">+ sources</text>
             <text x="190" y="170" text-anchor="middle" fill="rgba(255,255,255,0.28)" font-size="9" font-family="Geist Mono">+ FAQ</text>
-            <text x="270" y="170" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="Geist Mono">+ Compare</text>
-            <text x="340" y="170" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="Geist Mono">+ Schema</text>
+            <text x="270" y="170" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="Geist Mono">+ comparison table</text>
+            <text x="340" y="170" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="Geist Mono">+ schema</text>
           </svg>
           <div class="mock-foot mock-foot-list">
-            <div><span class="ftag">SUGGEST</span>Adding a comparison table + schema markup is projected to lift citation probability by <strong style="color:var(--text);font-family:var(--f-display);font-weight:400;font-style: normal;">+18pt</strong></div>
+            <div><span class="ftag">SUGGEST</span>Expected citation lift from adding comparison table + Schema markup <strong style="color:var(--text);font-family:var(--f-display);font-weight:400;font-style: normal;">+18pt</strong> expected</div>
           </div>
         </div>
       </div>
@@ -1650,40 +2540,41 @@ body::before {
     <div class="deliverable-row reveal">
       <div class="deliverable-text">
         <div class="deliverable-num">03</div>
-        <h3>Action <em>priorities</em></h3>
-        <p>"What to publish, and where, to get cited" — the model itself generates a <strong>prioritized action guide</strong>.
-        Each action shows projected impact (in score points) and difficulty.</p>
+        <h3>Channel-level <em>content action plan</em></h3>
+        <p>Identify which content to publish on which channel to raise citation potential.
+        SEO articles, comparison pages, FAQs, PR angles, YouTube scripts, social posts, and community answers are covered.
+        <strong>production direction tailored to each channel format</strong>.</p>
         <ul class="deliverable-bullets">
-          <li>Auto-generated priority actions per platform</li>
-          <li>Projected impact (in points)</li>
-          <li>Difficulty · time estimate</li>
+          <li>Auto-generate channel-specific content briefs</li>
+          <li>Show expected impact and production difficulty</li>
+          <li>Separate global and local channel messaging</li>
         </ul>
       </div>
       <div class="deliverable-visual">
         <div class="mock-card">
           <div class="mock-head">
-            <span class="mock-pill">Priority Actions · 4 items</span>
-            <span class="mock-pill mock-pill-good">+8.4pt projected</span>
+            <span class="mock-pill">Content Actions · 4 items</span>
+            <span class="mock-pill mock-pill-good">+8.4pt expected if executed</span>
           </div>
           <div class="mock-actions">
             <div class="mock-action">
               <span class="prio prio-high">P1</span>
-              <div class="mock-action-body"><strong>Publish official comparison page</strong><span>Perplexity favors comparison content — show your edge over competitor K</span></div>
+              <div class="mock-action-body"><strong>Publish official comparison page</strong><span>Perplexity often cites comparison content — publish evidence versus competitors</span></div>
               <div class="mock-action-impact"><b>+3.2pt</b><small>2 days</small></div>
             </div>
             <div class="mock-action">
               <span class="prio prio-high">P1</span>
-              <div class="mock-action-body"><strong>Add FAQ schema markup</strong><span>AI Overview citation rate 38% → 60% projected (less Reddit reliance)</span></div>
+              <div class="mock-action-body"><strong>Create YouTube review script</strong><span>Reframe use cases and comparison points into a 90-second video format</span></div>
               <div class="mock-action-impact"><b>+2.8pt</b><small>4 hours</small></div>
             </div>
             <div class="mock-action">
               <span class="prio prio-med">P2</span>
-              <div class="mock-action-body"><strong>Open-source 3 case studies on GitHub</strong><span>Claude favors code & verifiable evidence</span></div>
+              <div class="mock-action-body"><strong>Community answer package</strong><span>Organize Reddit and Quora objections and evidence into neutral answers</span></div>
               <div class="mock-action-impact"><b>+1.6pt</b><small>1 week</small></div>
             </div>
             <div class="mock-action">
               <span class="prio prio-low">P3</span>
-              <div class="mock-action-body"><strong>Strengthen hreflang on docs</strong><span>JP/DE market visibility +12% projected</span></div>
+              <div class="mock-action-body"><strong>Strengthen local PR angle</strong><span>Separate sources and messages likely to be cited in JP/US markets</span></div>
               <div class="mock-action-impact"><b>+0.8pt</b><small>1 day</small></div>
             </div>
           </div>
@@ -1694,13 +2585,13 @@ body::before {
     <div class="deliverable-row deliverable-row-reverse reveal">
       <div class="deliverable-text">
         <div class="deliverable-num">04</div>
-        <h3>Screenshot <em>evidence</em></h3>
-        <p>We attach the <strong>actual screen captures</strong> from each AI answer.
-        Cited sources are highlighted automatically — ready to drop into reports or executive presentations.</p>
+        <h3>Answer <em>screenshot</em></h3>
+        <p>Attach the actual AI answer screen <strong>captured as-is</strong>.
+        Cited sources are highlighted, so the screenshot can be used immediately in reports and executive meetings.</p>
         <ul class="deliverable-bullets">
-          <li>7 AI × 12 countries = 84+ screenshots/week</li>
-          <li>Auto-highlighted citation sources</li>
-          <li>Direct download as PNG · PDF · BigQuery</li>
+          <li>7 AI × 12 countries = 84+ screenshots every week</li>
+          <li>Automatic cited-source highlights</li>
+          <li>Direct PNG · PDF · BigQuery download</li>
         </ul>
       </div>
       <div class="deliverable-visual">
@@ -1712,9 +2603,9 @@ body::before {
           <div class="mock-screenshot-body">
             <div class="mock-msg-prompt">Tell me about the Mercedes-Benz E-Class</div>
             <div class="mock-msg-answer">
-              The Mercedes-Benz E-Class is a premium sedan from Stuttgart, Germany.
-              The <mark>2026 model</mark> introduces mild-hybrid technology and the <mark>MBUX Superscreen</mark>.
-              Versus rivals like the BMW 5 Series and Audi A6, it leads in <mark>ride comfort and interior finish</mark>.
+              The Mercedes-Benz E-Class is a premium sedan from Stuttgart, Germany, and
+              <mark>the 2026 model</mark> adds mild-hybrid technology and <mark>the MBUX Superscreen</mark>.
+              Compared with the BMW 5 Series and Audi A6, it stands out in <mark>ride comfort and interior finish</mark>.
               <div class="mock-citations">
                 <span class="cit"><b>1</b> mercedes-benz.com</span>
                 <span class="cit"><b>2</b> motortrend.com</span>
@@ -1728,47 +2619,98 @@ body::before {
   </div>
 </section>
 
+<!-- ===== USE CASES ===== -->
+<section class="section" id="use-cases">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Who Uses Plurank</div>
+        <h2>
+          <span class="line">Teams that manage</span>
+          <span class="line">AI search as <em>an operating channel</em>.</span>
+        </h2>
+      </div>
+      <p class="section-lede">
+        Plurank is not only for GEO specialists.
+        It is a shared data layer for global brands, content teams, agencies, and GTM teams
+        to manage brand discovery inside AI answers.
+      </p>
+    </div>
+
+    <div class="usecase-grid">
+      <div class="usecase-card reveal">
+        <h3>Global Brand</h3>
+        <p>Compare AI search visibility and competitor positions by country in one view.</p>
+        <div class="usecase-tag">Country Gap</div>
+      </div>
+      <div class="usecase-card reveal reveal-d1">
+        <h3>SEO/GEO Team</h3>
+        <p>Manage mention rate, citation rate, and recommendation position inside AI answers as KPIs beyond search rank.</p>
+        <div class="usecase-tag">AI Visibility</div>
+      </div>
+      <div class="usecase-card reveal reveal-d2">
+        <h3>Content Team</h3>
+        <p>Check AI citation probability and improvement points before content is published.</p>
+        <div class="usecase-tag">Pre-publish Score</div>
+      </div>
+      <div class="usecase-card reveal reveal-d3">
+        <h3>Agency</h3>
+        <p>Use data to propose client-specific AI Visibility reports and execution strategies.</p>
+        <div class="usecase-tag">White-label Report</div>
+      </div>
+      <div class="usecase-card reveal reveal-d4">
+        <h3>Commerce/GTM</h3>
+        <p>Track how AI recommendations and buying journeys affect revenue, inquiries, and brand search.</p>
+        <div class="usecase-tag">AI-led Demand</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== HOW WE WORK · 4 LAYER ===== -->
 <section class="section" id="engage">
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <div class="eyebrow">How We Work · Four Engagement Models</div>
-        <h2>Start today, or plug us into your <em>company-wide</em> systems.</h2>
+        <div class="eyebrow">How We Work · Four ways to start</div>
+        <h2>
+          <span class="line">Start with consulting,</span>
+          <span class="line"><em>scale with products and data</em>.</span>
+        </h2>
       </div>
       <p class="section-lede">
-        Four entry points — <strong>Consulting · SaaS · API · AI Agent</strong> — sized to your team and goals.
+        For each team size and goal, we offer <strong>consulting, SaaS, API, and AI agents</strong> as four staged entry points.
       </p>
     </div>
 
     <div class="layer-grid">
       <div class="layer-card layer-live reveal">
-        <div class="layer-status">Live · Start today</div>
+        <div class="layer-status">Live · Start now</div>
         <h3>Consulting</h3>
-        <p class="layer-fit">Enterprise · Global brands</p>
-        <p>Our team delivers <strong style="color:var(--text);">5 Lens analysis + an action guide</strong> weekly. Fastest path to results.</p>
-        <div class="layer-price">~$45K setup + $5K–6K/mo</div>
+        <p class="layer-fit">Enterprise · global brands</p>
+        <p>The TwoStepsAhead team delivers <strong style="color:var(--text);">5 Lens analysis + channel-level content action plans</strong>every week. Designed for teams that want to start a PoC quickly.</p>
+        <div class="layer-price">Initial KRW 60M + monthly KRW 7M-8M</div>
       </div>
       <div class="layer-card reveal reveal-d1">
         <div class="layer-status">2026 H2</div>
         <h3>Plurank.app · SaaS</h3>
-        <p class="layer-fit">Mid-market / In-house teams</p>
-        <p>Use 5 Lens self-serve. Drop a keyword, get scores and guidance instantly.</p>
-        <div class="layer-price">Monthly subscription · 3-tier</div>
+        <p class="layer-fit">Mid-market · SMB / marketing teams</p>
+        <p>Use 5 Lens in self-service mode. Enter a question and get scores, causes, and content improvement suggestions automatically.</p>
+        <div class="layer-price">Monthly subscription (Entry · Growth · Enterprise)</div>
       </div>
       <div class="layer-card reveal reveal-d2">
         <div class="layer-status">2027</div>
         <h3>Plurank API + MCP · DaaS</h3>
         <p class="layer-fit">Enterprise / AI engineering teams</p>
-        <p>Feed citation and recommendation data directly into your in-house AI systems. A company-wide intelligence layer.</p>
+        <p>Feed citation and recommendation data directly into internal AI systems as a company-wide intelligence layer.</p>
         <div class="layer-price">Custom quote</div>
       </div>
       <div class="layer-card reveal reveal-d3">
         <div class="layer-status">2028</div>
         <h3>Plurank.AI / .TEAM · Agent</h3>
-        <p class="layer-fit">Every company</p>
-        <p>Autonomous agents handle analysis, simulation, and content generation. CMO Agent leads the team.</p>
-        <div class="layer-price">Pre-register</div>
+        <p class="layer-fit">All companies</p>
+        <p>Agents perform analysis, simulation, and content draft generation, increasing execution speed for marketing teams.</p>
+        <div class="layer-price">Pre-registration</div>
       </div>
     </div>
   </div>
@@ -1779,35 +2721,38 @@ body::before {
   <div class="container">
     <div class="section-head reveal" style="grid-template-columns:1fr;margin-bottom:48px;">
       <div>
-        <div class="eyebrow">FAQ</div>
-        <h2>Six things people ask most about <em>Plurank</em>.</h2>
+        <div class="eyebrow">FAQ · Common questions</div>
+        <h2>
+          <span class="line">6 common questions</span>
+          <span class="line">about <em>Plurank</em>.</span>
+        </h2>
       </div>
     </div>
 
     <div class="faq-list reveal">
       <details class="faq-item">
         <summary>How is GEO different from SEO?</summary>
-        <p>SEO targeted "ranking on the first page of search." GEO targets <strong>"being cited inside answers from ChatGPT, Claude, Perplexity, and others."</strong> As AI synthesizes answers from multiple sources, becoming a cited source matters more than ranking.</p>
+        <p>SEO dealt with rankings in search results; GEO deals with <strong>the likelihood that brands and content are cited inside AI answers from ChatGPT, Claude, and Perplexity</strong>. Becoming a source for answers is becoming as important as search rank.</p>
       </details>
       <details class="faq-item">
         <summary>How accurate is the Pluora model?</summary>
-        <p>Trained weekly on <strong>30M+ "publish-to-citation" data points</strong> captured by 60 workers across 12 countries on 7 AI platforms. Mean Absolute Percentage Error (MAPE) of 8.6% — at industry-standard accuracy.</p>
+        <p>It learns from <strong>30M+ publish-to-citation empirical data points captured weekly by 60 workers across 12 countries and 7 AI platforms</strong>. Current average prediction error (MAPE) is 8.6%.</p>
       </details>
       <details class="faq-item">
         <summary>Why measure 12 countries simultaneously?</summary>
-        <p>Same query yields different answers in Korean ChatGPT vs. US ChatGPT. Global brands must <strong>see all 12-country answers in parallel</strong> to act precisely.</p>
+        <p>Even the same keyword produces different ChatGPT answers in Korea and the United States. Global content teams need to see <strong>country-level answer differences</strong> to set accurate execution priorities.</p>
       </details>
       <details class="faq-item">
-        <summary>What's different from existing solutions?</summary>
-        <p>Most existing tools track either social or AI search alone, in a single market. Plurank <strong>unifies both across 12 countries × 12 channels</strong> and predicts citation probability before publishing.</p>
+        <summary>How is Plurank different from Brandwatch, Profound, or Ascent?</summary>
+        <p>Most tools stop at monitoring or search analytics. Plurank connects <strong>AI answers, source signals, channel-level content execution, and pre-publish prediction</strong> into one loop.</p>
       </details>
       <details class="faq-item">
-        <summary>How long until I see value?</summary>
-        <p>From the <strong>first week</strong> after the consulting contract — your first 5 Lens report. SaaS launches H2 2026 for instant self-serve.</p>
+        <summary>How long does onboarding take?</summary>
+        <p>After a consulting agreement, <strong>the following week</strong> you can receive the first 5 Lens report. The SaaS product is planned for H2 2026; after launch, it will be available from keyword input.</p>
       </details>
       <details class="faq-item">
-        <summary>What does the free diagnostic include?</summary>
-        <p>Send a content URL, get back the <strong>per-AI-platform citation probability + a score-improvement guide</strong> — free, in about 3 minutes.</p>
+        <summary>What is the free diagnostic?</summary>
+        <p>Send a brand URL or question you want diagnosed, and we will summarize <strong>AI answer exposure, cited sources, position versus competitors, and improvement priorities</strong>.</p>
       </details>
     </div>
   </div>
@@ -1817,15 +2762,18 @@ body::before {
 <section class="section" id="contact">
   <div class="container">
     <div class="cta-card reveal">
-      <div class="cta-eyebrow">Free Diagnostic · Results in 3 minutes</div>
-      <h2>See your content's AI citation probability —<br><em>free, before you publish</em>.</h2>
-      <p>Send us a URL of an upcoming or existing piece. We'll return the citation probability for each of 7 AI platforms plus an improvement guide — at no cost.</p>
+      <div class="cta-eyebrow">Free Diagnostic · AI Visibility Check</div>
+      <h2>
+        <span class="line">How does our brand</span>
+        <span class="line"><em>look inside AI answers today?</em></span>
+      </h2>
+      <p>Send your core question and brand URL. We will map exposure inside AI answers, cited sources, competitor position, and the content actions you need.</p>
       <form class="cta-form">
         <input type="text" name="company" placeholder="Company" required>
         <input type="email" name="email" placeholder="Email" required>
-        <input type="text" name="url" placeholder="Content URL or domain" required>
+        <input type="text" name="url" placeholder="Brand URL or question to diagnose" required>
         <button type="submit" class="btn btn-primary">
-          Get a Free Diagnostic
+          Get an AI Visibility Diagnostic
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </button>
       </form>
@@ -1839,7 +2787,7 @@ body::before {
 
 <script>
 (function () {
-  const PROMPT = 'Where will "Vegan Moisturizer — Best of 2026" be cited and recommended?';
+  const PROMPT = '"Recommend Korean skincare brands for sensitive skin"';
   const sleep = (ms) => new Promise(r => setTimeout(r, ms));
   const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
 
@@ -1875,14 +2823,14 @@ body::before {
     await sleep(300);
     promptWrap.classList.add('done');
 
-    const rows = document.querySelectorAll('.platform-row[data-rank]');
+    const rows = document.querySelectorAll('.scene-signal[data-rank], .platform-row[data-rank]');
     let sum = 0;
 
     for (const row of rows) {
       const rank = +row.dataset.rank;
       const answer = row.dataset.answer;
-      const rankEl = row.querySelector('.platform-rank');
-      const answerEl = row.querySelector('.platform-answer');
+      const rankEl = row.querySelector('.scene-signal-score') || row.querySelector('.platform-rank');
+      const answerEl = row.querySelector('.scene-signal-copy') || row.querySelector('.platform-answer');
 
       row.classList.add('is-active');
       await typeText(answerEl, answer, 14, 8);
@@ -1896,6 +2844,8 @@ body::before {
       await sleep(120);
       row.classList.remove('is-active');
     }
+
+    if (!rows.length) return;
 
     const avg = sum / rows.length;
     const startAvg = performance.now();
@@ -2003,6 +2953,189 @@ body::before {
 })();
 </script>
 
+<script type="module">
+(async function () {
+  const canvas = document.getElementById('discovery-canvas');
+  const wrap = document.getElementById('discovery-scene');
+  if (!canvas || !wrap) return;
+
+  let THREE;
+  try {
+    THREE = await import('https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js');
+  } catch (err) {
+    wrap.classList.add('scene-static');
+    return;
+  }
+
+  const renderer = new THREE.WebGLRenderer({
+    canvas,
+    alpha: true,
+    antialias: true,
+    preserveDrawingBuffer: true,
+    powerPreference: 'high-performance'
+  });
+  renderer.setClearColor(0x000000, 0);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
+  camera.position.set(0, 0.15, 8.2);
+
+  const root = new THREE.Group();
+  scene.add(root);
+  scene.add(new THREE.AmbientLight(0xffffff, 0.64));
+
+  const warmLight = new THREE.PointLight(0xf59e0b, 3.2, 16);
+  warmLight.position.set(3.2, 2.4, 4.6);
+  scene.add(warmLight);
+
+  const coolLight = new THREE.PointLight(0x6ee7f9, 1.4, 14);
+  coolLight.position.set(-3.6, -2.4, 4.2);
+  scene.add(coolLight);
+
+  const coreMaterial = new THREE.MeshStandardMaterial({
+    color: 0x111111,
+    emissive: 0xf59e0b,
+    emissiveIntensity: 0.26,
+    metalness: 0.38,
+    roughness: 0.34,
+    transparent: true,
+    opacity: 0.86
+  });
+  const core = new THREE.Mesh(new THREE.IcosahedronGeometry(0.86, 3), coreMaterial);
+  root.add(core);
+
+  const coreWire = new THREE.LineSegments(
+    new THREE.EdgesGeometry(core.geometry),
+    new THREE.LineBasicMaterial({ color: 0xf8fafc, transparent: true, opacity: 0.2 })
+  );
+  core.add(coreWire);
+
+  [
+    { r: 1.35, color: 0xf59e0b, opacity: 0.34 },
+    { r: 2.15, color: 0x6ee7f9, opacity: 0.18 },
+    { r: 3.05, color: 0xffffff, opacity: 0.12 }
+  ].forEach((ring, i) => {
+    const torus = new THREE.Mesh(
+      new THREE.TorusGeometry(ring.r, 0.006, 8, 160),
+      new THREE.MeshBasicMaterial({ color: ring.color, transparent: true, opacity: ring.opacity })
+    );
+    torus.rotation.x = Math.PI / 2 + i * 0.18;
+    torus.rotation.y = i * 0.46;
+    root.add(torus);
+  });
+
+  const nodeGeometry = new THREE.SphereGeometry(0.075, 18, 18);
+  const lineMaterial = new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.14 });
+  const signalNodes = [
+    { label: 'Owned', angle: 0.12, radius: 3.15, y: 1.05, color: 0xf59e0b },
+    { label: 'Earned', angle: 1.42, radius: 3.34, y: 0.38, color: 0xffffff },
+    { label: 'Community', angle: 2.78, radius: 3.08, y: -0.78, color: 0x6ee7f9 },
+    { label: 'Social', angle: 4.05, radius: 3.26, y: -0.2, color: 0x8ab4ff },
+    { label: 'Local', angle: 5.18, radius: 2.86, y: 0.9, color: 0xfacc15 },
+    { label: 'Commerce', angle: 5.86, radius: 2.74, y: -1.02, color: 0xd6d3d1 }
+  ];
+
+  const flows = [];
+  signalNodes.forEach((node, nodeIndex) => {
+    const x = Math.cos(node.angle) * node.radius;
+    const z = Math.sin(node.angle) * node.radius * 0.42;
+    const pos = new THREE.Vector3(x, node.y, z);
+
+    const material = new THREE.MeshStandardMaterial({
+      color: node.color,
+      emissive: node.color,
+      emissiveIntensity: 0.48,
+      metalness: 0.1,
+      roughness: 0.28
+    });
+    const mesh = new THREE.Mesh(nodeGeometry, material);
+    mesh.position.copy(pos);
+    root.add(mesh);
+
+    const line = new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints([pos, new THREE.Vector3(0, 0, 0)]),
+      lineMaterial.clone()
+    );
+    line.material.color.setHex(node.color);
+    line.material.opacity = nodeIndex % 2 ? 0.12 : 0.2;
+    root.add(line);
+
+    for (let i = 0; i < 3; i += 1) {
+      const flowMaterial = new THREE.MeshBasicMaterial({
+        color: node.color,
+        transparent: true,
+        opacity: 0.72
+      });
+      const flow = new THREE.Mesh(new THREE.SphereGeometry(0.026, 10, 10), flowMaterial);
+      root.add(flow);
+      flows.push({ mesh: flow, start: pos.clone(), delay: (nodeIndex * 0.17 + i * 0.29) % 1 });
+    }
+  });
+
+  const starGeometry = new THREE.BufferGeometry();
+  const starPositions = [];
+  for (let i = 0; i < 130; i += 1) {
+    starPositions.push(
+      (Math.random() - 0.5) * 8.6,
+      (Math.random() - 0.5) * 5.8,
+      (Math.random() - 0.5) * 3.2 - 1.2
+    );
+  }
+  starGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starPositions, 3));
+  const stars = new THREE.Points(
+    starGeometry,
+    new THREE.PointsMaterial({ color: 0xffffff, size: 0.012, transparent: true, opacity: 0.36 })
+  );
+  root.add(stars);
+
+  let pointerX = 0;
+  let pointerY = 0;
+  wrap.addEventListener('pointermove', (event) => {
+    const rect = wrap.getBoundingClientRect();
+    pointerX = ((event.clientX - rect.left) / rect.width - 0.5) * 0.35;
+    pointerY = ((event.clientY - rect.top) / rect.height - 0.5) * 0.22;
+  });
+  wrap.addEventListener('pointerleave', () => {
+    pointerX = 0;
+    pointerY = 0;
+  });
+
+  function resize() {
+    const width = Math.max(320, wrap.clientWidth);
+    const height = Math.max(520, wrap.clientHeight);
+    renderer.setSize(width, height, false);
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+  }
+
+  const clock = new THREE.Clock();
+  function animate() {
+    const elapsed = clock.getElapsedTime();
+    root.rotation.y += (pointerX + elapsed * 0.035 - root.rotation.y) * 0.018;
+    root.rotation.x += (pointerY + Math.sin(elapsed * 0.42) * 0.055 - root.rotation.x) * 0.018;
+    core.rotation.x = elapsed * 0.18;
+    core.rotation.y = elapsed * 0.26;
+    stars.rotation.y = -elapsed * 0.018;
+
+    flows.forEach((flow) => {
+      const t = (elapsed * 0.22 + flow.delay) % 1;
+      flow.mesh.position.copy(flow.start).multiplyScalar(1 - t);
+      flow.mesh.material.opacity = Math.sin(t * Math.PI) * 0.72;
+      const scale = 0.7 + Math.sin(t * Math.PI) * 0.9;
+      flow.mesh.scale.setScalar(scale);
+    });
+
+    renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  animate();
+})();
+</script>
+
 
 
 
@@ -2014,47 +3147,47 @@ body::before {
 
     <!-- Step 1: persona -->
     <div class="pl-step active" data-step="1">
-      <div class="pl-modal-eyebrow">STEP 1 · Choose your role</div>
+      <div class="pl-modal-eyebrow">STEP 1 · Select your profile</div>
       <h3>See Plurank in 30 minutes.</h3>
-      <p class="pl-modal-desc">We will tailor the walkthrough — tell us about you first.</p>
+      <p class="pl-modal-desc">Choose your profile first so we can tailor the walkthrough.</p>
       <div class="pl-persona-grid">
         <button type="button" class="pl-persona-card" data-pl-persona="agency">
           <span class="pl-persona-icon">🏢</span>
-          <span class="pl-persona-name">Marketing Agency</span>
-          <span class="pl-persona-sub">SEO · GEO · Content · PR agencies. Arm client proposals with hard data.</span>
+          <span class="pl-persona-name">Marketing agency</span>
+          <span class="pl-persona-sub">SEO, GEO, content, and PR agencies that need data-backed client proposals.</span>
         </button>
         <button type="button" class="pl-persona-card" data-pl-persona="brand">
           <span class="pl-persona-icon">🎯</span>
-          <span class="pl-persona-name">In-house Brand</span>
-          <span class="pl-persona-sub">Marketing · SEO · CMO teams. Win in AI search for your brand.</span>
+          <span class="pl-persona-name">Brand in-house</span>
+          <span class="pl-persona-sub">Internal marketing, SEO, and CMO teams managing brand visibility in AI search.</span>
         </button>
       </div>
     </div>
 
     <!-- Step 2: agency -->
     <div class="pl-step" data-step="2" data-persona-view="agency">
-      <button type="button" class="pl-back" data-pl-back>← Change</button>
+      <button type="button" class="pl-back" data-pl-back>← Choose again</button>
       <span class="pl-step-indicator">2 / 2</span>
-      <div class="pl-modal-eyebrow" style="clear:both;">STEP 2 · Book an online meeting</div>
-      <h3>Plurank for Marketing Agencies</h3>
+      <div class="pl-modal-eyebrow" style="clear:both;">STEP 2 · Request an online meeting</div>
+      <h3>Plurank for marketing agencies</h3>
       <ul class="pl-value-list">
-        <li><strong>White-label reports</strong> per client — published under your brand</li>
-        <li><strong>One account, many brands</strong> — manage the whole portfolio</li>
-        <li><strong>Reseller margin 30–50%</strong> — data is resellable</li>
-        <li>30M+ real-browser records · 7 AI engines · 12 countries via ISP IPs</li>
+        <li><strong>Client-specific AI Visibility reports</strong> — proposals by question, source, and competitor</li>
+        <li><strong>GEO execution priorities</strong> — content, PR, community, and social actions included</li>
+        <li><strong>Global campaign support</strong> — analyze country-level answers and local source gaps</li>
+        <li>Based on 7 AI platforms · 12 countries · multi-channel source data</li>
       </ul>
       <div class="pl-section-divider">FORM</div>
       <form data-pl-form data-persona="agency">
         <input type="hidden" name="type" value="demo">
         <input type="hidden" name="persona" value="agency">
         <input type="text" name="company" placeholder="Company" required autocomplete="organization">
-        <input type="text" name="name" placeholder="Your name" autocomplete="name">
+        <input type="text" name="name" placeholder="Contact name" autocomplete="name">
         <input type="email" name="email" placeholder="Email" required autocomplete="email">
         <input type="text" name="url" placeholder="Company URL (optional)" autocomplete="url">
-        <input type="text" name="slot" class="full" placeholder="Preferred meeting time (e.g. weekday 2–5pm / May 16 PM KST)">
+        <input type="text" name="slot" class="full" placeholder="Preferred meeting time (e.g. weekdays 14:00-17:00 / May 16 afternoon)">
         <textarea name="message" class="full" placeholder="Message (optional)" rows="2"></textarea>
         <button type="submit">
-          <span>Book the 30-min demo</span>
+          <span>Request a 30-minute meeting</span>
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </button>
         <div class="pl-modal-msg"></div>
@@ -2063,28 +3196,28 @@ body::before {
 
     <!-- Step 2: brand -->
     <div class="pl-step" data-step="2" data-persona-view="brand">
-      <button type="button" class="pl-back" data-pl-back>← Change</button>
+      <button type="button" class="pl-back" data-pl-back>← Choose again</button>
       <span class="pl-step-indicator">2 / 2</span>
-      <div class="pl-modal-eyebrow" style="clear:both;">STEP 2 · Book an online meeting</div>
-      <h3>Plurank for In-house Brands</h3>
+      <div class="pl-modal-eyebrow" style="clear:both;">STEP 2 · Request an online meeting</div>
+      <h3>Plurank for brand in-house teams</h3>
       <ul class="pl-value-list">
-        <li><strong>Predict citation probability before publishing</strong> — Pluora MAPE 8.6%</li>
-        <li><strong>7 AI engines × 12 countries</strong> monitoring — real browser data</li>
-        <li><strong>Compare 5 competitors</strong> — Citation · Source · Platform analysis</li>
-        <li>Live with top Korean media agency and a Samsung affiliate</li>
+        <li><strong>Diagnose how your brand appears in AI answers</strong> — check answer, citation, and recommendation position</li>
+        <li><strong>AI Discovery Map versus competitors</strong> — identify which questions you are losing</li>
+        <li><strong>Pre-publish GEO Score prediction</strong> — Pluora-based content improvement simulation</li>
+        <li>Execution strategy across Korea, Japan, the United States, and other global markets</li>
       </ul>
       <div class="pl-section-divider">FORM</div>
       <form data-pl-form data-persona="brand">
         <input type="hidden" name="type" value="demo">
         <input type="hidden" name="persona" value="brand">
         <input type="text" name="company" placeholder="Company" required autocomplete="organization">
-        <input type="text" name="name" placeholder="Your name" autocomplete="name">
+        <input type="text" name="name" placeholder="Contact name" autocomplete="name">
         <input type="email" name="email" placeholder="Email" required autocomplete="email">
         <input type="text" name="url" placeholder="Company URL (optional)" autocomplete="url">
-        <input type="text" name="slot" class="full" placeholder="Preferred meeting time (e.g. weekday 2–5pm / May 16 PM KST)">
+        <input type="text" name="slot" class="full" placeholder="Preferred meeting time (e.g. weekdays 14:00-17:00 / May 16 afternoon)">
         <textarea name="message" class="full" placeholder="Message (optional)" rows="2"></textarea>
         <button type="submit">
-          <span>Book the 30-min demo</span>
+          <span>Request a 30-minute meeting</span>
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </button>
         <div class="pl-modal-msg"></div>
@@ -2095,8 +3228,8 @@ body::before {
 
 <script>
 (function () {
-  const SUCCESS_MSG = 'Request received. We will reply with a meeting time within 1 business day.';
-  const ERROR_MSG   = 'Something went wrong. Please try again later.';
+  const SUCCESS_MSG = 'Your request has been received. We will reply with meeting times within one business day.';
+  const ERROR_MSG   = 'Something went wrong while sending. Please try again shortly.';
   const modal = document.getElementById('pl-modal');
   if (!modal) return;
   const steps = modal.querySelectorAll('.pl-step');
