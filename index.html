@@ -1393,18 +1393,122 @@ body::before {
   text-transform: uppercase;
   color: var(--highlight);
 }
+.lead-bridge {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.lead-bridge-copy,
+.lead-bridge-flow {
+  background: var(--bg);
+  padding: 34px;
+}
+.lead-bridge-copy {
+  background:
+    linear-gradient(180deg, rgba(245,158,11,0.08), rgba(255,255,255,0.015)),
+    var(--bg-soft);
+}
+.lead-bridge-kicker {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--highlight);
+  margin-bottom: 18px;
+}
+.lead-bridge h3 {
+  font-family: var(--f-display);
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -0.022em;
+  max-width: 620px;
+}
+.lead-bridge h3 em { font-style: normal; font-weight: 400; }
+.lead-bridge p {
+  margin-top: 22px;
+  color: var(--text-soft);
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 620px;
+}
+.lead-bridge-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.lead-bridge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 11px 15px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: rgba(255,255,255,0.03);
+}
+.lead-bridge-note {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--text-mute);
+}
+.lead-bridge-flow {
+  display: grid;
+  gap: 12px;
+}
+.lead-flow-step {
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.018);
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.lead-flow-step b {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--highlight);
+  font-weight: 500;
+}
+.lead-flow-step strong {
+  display: block;
+  font-family: var(--f-display);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+.lead-flow-step span {
+  display: block;
+  margin-top: 7px;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.58;
+}
 
 @media (max-width: 1100px) {
   .source-map { grid-template-columns: 1fr; }
   .source-arrow { transform: rotate(90deg); padding: 8px 0; }
-  .loop-grid, .channel-grid, .usecase-grid { grid-template-columns: repeat(2, 1fr); }
+  .loop-grid, .channel-grid, .usecase-grid, .lead-bridge { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 900px) {
   .question-grid { grid-template-columns: 1fr; }
   .question-panel { padding: 30px 24px; min-height: auto; }
 }
 @media (max-width: 700px) {
-  .loop-grid, .channel-grid, .usecase-grid { grid-template-columns: 1fr; }
+  .loop-grid, .channel-grid, .usecase-grid, .lead-bridge { grid-template-columns: 1fr; }
+  .lead-bridge-copy, .lead-bridge-flow { padding: 26px 22px; }
 }
 
 </style>
@@ -2669,6 +2773,35 @@ body::before {
         <h3>Commerce/GTM</h3>
         <p>AI 추천과 구매 여정이 매출, 문의, 브랜드 검색에 미치는 영향을 추적합니다.</p>
         <div class="usecase-tag">AI-led Demand</div>
+      </div>
+    </div>
+
+    <div class="lead-bridge reveal">
+      <div class="lead-bridge-copy">
+        <div class="lead-bridge-kicker">Connected Product · Citora Lead</div>
+        <h3>AI가 만든 관심을 <em>영업 신호</em>로 이어갑니다.</h3>
+        <p>
+          Plurank가 AI 답변과 멀티채널 콘텐츠로 발견 경로를 만들면, Citora Lead는 웹사이트를 방문한 회사를 식별하고
+          관심 페이지, 연락 후보, 다음 액션을 Slack과 CRM으로 전달합니다.
+        </p>
+        <div class="lead-bridge-actions">
+          <a class="lead-bridge-link" href="https://lead.plurank.com/early-access" target="_blank" rel="noopener">Citora Lead 소개 보기</a>
+          <span class="lead-bridge-note">1줄 픽셀 · 방문 기업 식별 · Slack/HubSpot 액션</span>
+        </div>
+      </div>
+      <div class="lead-bridge-flow" aria-label="Plurank and Citora Lead operating flow">
+        <div class="lead-flow-step">
+          <b>01</b>
+          <div><strong>AI Discovery</strong><span>AI 답변에 인용될 콘텐츠와 소스 신호를 만듭니다.</span></div>
+        </div>
+        <div class="lead-flow-step">
+          <b>02</b>
+          <div><strong>Website Intent</strong><span>가격표, 데모, 비교 페이지를 본 방문 회사를 식별합니다.</span></div>
+        </div>
+        <div class="lead-flow-step">
+          <b>03</b>
+          <div><strong>Sales Action</strong><span>영업팀 Slack과 HubSpot에 관심 점수와 추천 연락처를 전달합니다.</span></div>
+        </div>
       </div>
     </div>
   </div>
